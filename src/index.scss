@@ -1,0 +1,61 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html{
+  scroll-behavior: smooth
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+//Colors website
+$primary-color: #525dce;
+$secondary-color: rgb(51, 194, 241);
+
+$primary-background: rgb(53, 28, 28);
+$secondary-background: rgb(109, 13, 13);
+$third-background: rgb(230, 230, 230);
+
+$primary-text-color: rgb(66, 66, 66);
+$secondary-text-color: rgb(241, 241, 241);
+$third-text-color: gray;
+
+//Skew properties
+//Vertical
+$skew-negative-v: (skew(0deg, -2deg));
+$skew-negative-box: (skew( 3deg, 0deg));
+
+//Horizontal
+$skew-negative-h: (skew(-3deg, 0deg));
+
+@mixin headlinebox($secondary-background) {
+  align-items: center;
+  color: $secondary-text-color;
+  width: 200px;
+  margin: auto;
+  background-color: $secondary-background;
+  position: relative;
+  text-align: center;
+  padding: .55rem 10px;
+  z-index: 10;
+  border-radius: 5px;
+}
+
+@mixin boxhedline($secondary-background) { 
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  padding: .55rem 10px;
+  z-index: 10;
+  border-radius: 5px;
+  border: 3px solid $secondary-background;
+}

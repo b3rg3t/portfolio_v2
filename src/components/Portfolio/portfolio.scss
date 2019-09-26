@@ -1,0 +1,19 @@
+@import "../../index.scss";
+
+.portfolio{
+    width: 100%;
+    margin: auto;
+    height: 800px;
+    .portfolio__header{
+        @include headlinebox($secondary-background);
+    }
+    .portfolio__container__right{
+        float: right;
+        width: 50%;
+        height: 200px;
+        background-color: $third-background;
+    }
+    .portfolio__container__left{
+        width: 50%;
+    }
+}

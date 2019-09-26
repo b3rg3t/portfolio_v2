@@ -1,0 +1,39 @@
+@import "../../index.scss";
+.contact {
+  width: 100%;
+  .contact__head {
+    // @include headlinebox($secondary-background);
+    h3 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin: auto;
+    border: 2px inset;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .contact__form__input{
+    width: 80%;
+  }
+  textarea {
+    width: 80%;
+    // border: 0px;
+    // background: white;
+    // font-size: 1rem;
+    // width: calc(100% - 100px);
+    // padding: 10px;
+    // margin: 10px 0 10px 0px;
+    // display: inline-block;
+    // text-decoration: none;
+    // font-family: "K2D", sans-serif;
+    // border-bottom: 1px solid rgb(0, 0, 0);
+  }
+}

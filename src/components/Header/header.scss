@@ -1,0 +1,26 @@
+@import "../../index.scss";
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+
+.header {
+  background: url(../../images/fogforrest.jpg)no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  font-family: 'Satisfy', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: $primary-text-color;
+  -webkit-box-shadow: 0px 7px 8px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 7px 8px -10px rgba(0,0,0,0.75);
+  box-shadow: 0px 7px 8px -10px rgba(0,0,0,0.75);
+  .header__content {
+    text-align: center;
+    .header__content__title {
+      margin:  0;
+    }
+  }
+}
