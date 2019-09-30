@@ -1,7 +1,7 @@
 @import "../../index.scss";
 @import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
 
-.header {
+.home {
   background: url(../../images/fogforrest.jpg)no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -17,9 +17,9 @@
   -webkit-box-shadow: 0px 7px 8px -10px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 7px 8px -10px rgba(0,0,0,0.75);
   box-shadow: 0px 7px 8px -10px rgba(0,0,0,0.75);
-  .header__content {
+  .home__content {
     text-align: center;
-    .header__content__title {
+    .home__content__title {
       margin:  0;
     }
   }

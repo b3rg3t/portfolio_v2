@@ -34,7 +34,9 @@
     align-items: center;
     justify-content: center;
     flex: 1 1 auto;
-    
+    .navigation__container__link{
+      cursor: pointer;
+    }
     .navigation__pic {
       width: 200px;
       .navigation__picture {

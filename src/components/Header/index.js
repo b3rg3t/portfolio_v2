@@ -25,9 +25,9 @@ export default class Header extends Component{
   // className={this.state.scroll > this.state.top ? "fixed-nav" : ""}
   render(){
     return(
-      <div className="header">
-        <div className="header__content">
-          <h1 className="header__content__title">David Berg</h1>
+      <div className="home">
+        <div className="home__content">
+          <h1 className="home__content__title">David Berg</h1>
           <span>Front End Developer</span>
         </div>
       </div>

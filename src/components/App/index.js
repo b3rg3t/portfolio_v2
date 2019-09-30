@@ -2,17 +2,24 @@ import React, { Component } from "react";
 import "./App.scss";
 import Navigation from "../Navigation";
 import Footer from "../Footer";
-import Content from "../Content";
 
-// Content in page
+//Imports to content
+import Portfolio from "../Portfolio";
+import Qualities from "../Qualities";
+import Skills from "../Skills";
+import Contact from "../Contact";
+import Topcontent from "../Topcontent";
+import Header from "../Header";
+import Location from "../Location";
+
 // Navigation
 const LINKS = [
-  { label: "Home", to: "#home" },
-  { label: "Skills", to: "#skills" },
-  { label: "Qualities", to: "#qualities" },
-  { label: "Portfolio", to: "#portfolio" },
-  { label: "Website", to: "https://www.davidanders.se/" },
-  { label: "Contact", to: "#contact" }
+  { id: "home", label: "Home", to: "#home" },
+  { id: "skills", label: "Skills", to: "#skills" },
+  { id: "qualities", label: "Qualities", to: "#qualities" },
+  { id: "portfolio", label: "Portfolio", to: "#portfolio" },
+  { id: "contact", label: "Contact", to: "#contact" },
+  { id: "location", label: "Location", to: "#location" }
 ];
 
 class App extends Component {
@@ -22,7 +29,36 @@ class App extends Component {
         <Navigation links={LINKS} />
         <div className="app__main">
           <div className="app__main__content">
-            <Content />
+            <main className="main">
+              <header id="home" className="main__header">
+                <Header />
+              </header>
+
+              <div className="main__top">
+                <Topcontent />
+              </div>
+
+              <div id="skills" className="main__first">
+                <Skills />
+              </div>
+
+              <div id="qualities" className="main__two">
+                <Qualities  />
+              </div>
+
+              <div id="portfolio" className="main__three">
+                <Portfolio  />
+              </div>
+
+              <div className="main__fourth">
+                <div className="main__fourth__left"></div>
+
+                <div id="location" className="main__fourth__right">
+                  <Location  />
+                </div>
+              </div>
+              <Contact id="contact" />
+            </main>
           </div>
           <Footer />
         </div>

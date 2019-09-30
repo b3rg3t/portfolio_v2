@@ -1,16 +1,7 @@
 @import "../../index.scss";
+
 .skills {
   max-width: 500px;
-  .skills__pic__gray {
-    display: inline-block;
-
-  }
-  .skills__pic__gray .skills__pic__color {
-    display: none;
-    top: 0;
-    left: 0;
-    z-index: 99;
-  }
   .skills__ul {
     display: flex;
     justify-content: center;
@@ -20,8 +11,7 @@
     padding: 0;
     .skills__li {
       list-style: none;
-      margin: 0 30px;
-      // border-radius: 5px;
+      margin: 20px 30px;
     }
   }
 }
