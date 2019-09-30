@@ -24,6 +24,7 @@
     // box-shadow: 0px 0px 5px 0px rgba(122, 122, 122, 1);
     .qualities__boxes__content {
       flex: 1;
+      display: block;
       justify-content: center;
       align-items: center;
       padding: 20px;
@@ -35,9 +36,6 @@
       width: 50px;
       height: 50px;
       color: $primary-background;
-    }
-    .qualities__boxes__head {
-      @include boxhedline($primary-background);
     }
   }
 }

@@ -1,7 +1,7 @@
 @import "../../index.scss";
 
 .navigation {
-  color: $third-text-color;
+  color: $primary-text-color;
   display: flex;
   height: 100vh;
   position: fixed;
@@ -13,6 +13,7 @@
   background-color: $primary-background;
   &:before {
     content: " ";
+    color: $primary-text-color;
     position: absolute;
     display: block;
     width: 100%;
@@ -25,16 +26,16 @@
     -ms-transform: $skew-negative-h;
     -webkit-transform: $skew-negative-h;
     transform: $skew-negative-h;
-    -webkit-box-shadow: 10px 10px 10px -6px rgba(0,0,0,0.68);
-    -moz-box-shadow: 10px 10px 10px -6px rgba(0,0,0,0.68);
-    box-shadow: 10px 10px 10px -6px rgba(0,0,0,0.68);
+    -webkit-box-shadow: 5px 5px 5px -6px rgba(0, 0, 0, 0.329);
+    -moz-box-shadow: 5px 5px 5px -6px rgba(0, 0, 0, 0.329);
+    box-shadow: 5px 5px 5px -6px rgba(0, 0, 0, 0.329);
   }
   .navigation__container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 1 1 auto;
-    .navigation__container__link{
+    .navigation__container__link {
       cursor: pointer;
     }
     .navigation__pic {
@@ -43,8 +44,8 @@
         width: 100%;
         border-radius: 50%;
         max-height: 100%;
-        border: 3px solid grey;
-        background-color: lightgray;
+        border: 3px solid lightgrey;
+        background-color: white;
       }
     }
 
@@ -55,20 +56,115 @@
         list-style: none;
       }
       a {
-        color: $third-text-color;
+        color: $primary-text-color;
         text-decoration: none;
         &:hover {
-          color: white;
+          color: $third-text-color;
         }
       }
     }
   }
   .navigation__container__icons {
     margin: 15px;
-    color: $third-text-color;
-    
+    color: $primary-text-color;
+
     &:hover {
-      color: white;
+      color: $third-text-color;
     }
+  }
+}
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 36px;
+  display: none;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+  border-radius: 10px;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: gray;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  font-size: 1.15em;
+  display: flex;
+  justify-content: center;
+  padding-top: 50%;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  height: 100%;
+  margin: auto;
+  ul {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    li {
+      list-style: none;
+      width: auto;
+      a {
+        width: auto;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 992px) {
+  .navigation {
+    display: none;
+  }
+  .bm-burger-button {
+    display: block;
   }
 }

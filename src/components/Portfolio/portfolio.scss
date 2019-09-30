@@ -1,18 +1,21 @@
 @import "../../index.scss";
 
-.portfolio{
-    width: 100%;
-    margin: 10px 50px;
-    .portfolio__header{
-        @include headlinebox($secondary-background);
+.portfolio {
+  width: 100%;
+  margin: 10px 50px;
+  .portfolio__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    .portfolio__content__image {
+      width: 50%;
+      min-width: 300px;
     }
-    .portfolio__container__right{
-        float: right;
-        width: 50%;
-        height: 100%;
-        background-color: $third-background;
+    .portfolio__container__right {
+      width: 50%;
+      min-width: 300px;
+      border-radius: 0 5px 5px 0;
+      background-color: $third-background;
     }
-    .portfolio__container__left{
-        width: 50%;
-    }
+  }
 }

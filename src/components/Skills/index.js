@@ -13,6 +13,7 @@ const Skills = () => {
             <img
               onMouseOver={e => (e.currentTarget.src = skill.hoverPic)}
               onMouseLeave={e => (e.currentTarget.src = skill.pic)}
+              className="skills__li__pic"
               src={skill.pic}
               alt={skill.alt}
               title={skill.title}

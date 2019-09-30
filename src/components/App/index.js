@@ -8,18 +8,18 @@ import Portfolio from "../Portfolio";
 import Qualities from "../Qualities";
 import Skills from "../Skills";
 import Contact from "../Contact";
-import Topcontent from "../Topcontent";
+// import Topcontent from "../Topcontent";
 import Header from "../Header";
 import Location from "../Location";
 
 // Navigation
 const LINKS = [
   { id: "home", label: "Home", to: "#home" },
-  { id: "skills", label: "Skills", to: "#skills" },
-  { id: "qualities", label: "Qualities", to: "#qualities" },
+  // { id: "skills", label: "Skills", to: "#skills" },
+  // { id: "qualities", label: "Qualities", to: "#qualities" },
   { id: "portfolio", label: "Portfolio", to: "#portfolio" },
   { id: "contact", label: "Contact", to: "#contact" },
-  { id: "location", label: "Location", to: "#location" }
+  // { id: "location", label: "Location", to: "#location" }
 ];
 
 class App extends Component {
@@ -35,7 +35,7 @@ class App extends Component {
               </header>
 
               <div className="main__top">
-                <Topcontent />
+              <Qualities  />
               </div>
 
               <div id="skills" className="main__first">
@@ -43,7 +43,7 @@ class App extends Component {
               </div>
 
               <div id="qualities" className="main__two">
-                <Qualities  />
+                
               </div>
 
               <div id="portfolio" className="main__three">
