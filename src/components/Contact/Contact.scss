@@ -23,32 +23,39 @@
       padding: 5px 10px;
       margin: 10px 0 0px 0px;
       display: inline-block;
-      background-color: $primary-background;
+      background-color: rgba(211, 211, 211, 0.178);
       border: 0px;
       text-decoration: none;
-      font-family: 'K2D', sans-serif;
-      border-bottom: 1px solid rgb(0, 0, 0);
-      &:focus{
+      font-family: "K2D", sans-serif;
+      // border-bottom: 1px solid rgb(0, 0, 0);
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
+      -moz-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
+      box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
+
+      &:focus {
         outline: none;
       }
     }
-    .contact__form__button{
+    .contact__form__button {
       border-radius: 10px;
-      cursor: pointer; 
+      cursor: pointer;
     }
   }
 
   textarea {
     width: 80%;
-    background: $primary-background;
+    background: rgba(211, 211, 211, 0.178);
     font-size: 1rem;
     margin: 23px;
     padding: 10px 0px 0px 10px;
-    font-family: 'K2D', sans-serif;
+    font-family: "K2D", sans-serif;
     border: none;
-    border-bottom: 1px solid rgb(0, 0, 0);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
+    box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
+    // border-bottom: 1px solid rgb(0, 0, 0);
     border-radius: 10px;
-    &:focus{
+    &:focus {
       outline: none;
     }
   }

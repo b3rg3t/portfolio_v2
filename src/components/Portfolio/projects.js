@@ -5,36 +5,42 @@ import DavidBerg from "../../images/AndersBerg.png";
 const projects = [
   {
     id: 0,
-    src: ProjectXY,
-    alt: "Grex",
-    text: "This is a website",
-    status: "Done",
+    original: ProjectXY,
+    thumbnail: ProjectXY,
+    originalAlt: "Grex",
+    description: "This is a website",
     github: "https://github.com/b3rg3t/grex_candy"
   },
   {
-    id: 0,
-    src: ProjectXY,
-    alt: "Project XY",
-    text: "This is a website",
-    status: "Under construction",
-    github: "https://github.com/b3rg3t/leo_quire"
-  },
-  {
     id: 1,
-    src: Quire,
-    alt: "Quire notepad",
-    text: "This is a website",
-    status: "Done",
-    github: "https://github.com/b3rg3t/leo_quire"
+    original: ProjectXY,
+    thumbnail: ProjectXY,
+    originalAlt: "Project XY",
+    description: "This is a website",
+    thumbnailLabel: "Project XY",
+    thumbnailTitle: "Project XY",
   },
   {
     id: 2,
-    src: DavidBerg,
-    alt: "David Anders",
-    text: "This is a website",
-    status: "Done",
+    original: Quire,
+    thumbnail: Quire,
+    originalAlt: "Quire notepad",
+    thumbnailLabel: "Quire",
+    description: "This is a website",
+    github: "https://github.com/b3rg3t/leo_quire"
+  },
+  {
+    id: 3,
+    original: DavidBerg,
+    thumbnail: DavidBerg,
+    originalAlt: "David Anders",
+    thumbnailLabel: "David Berg",
+    originalTitle: "David Anders",
+    description: "This is a website",
     github: "https://github.com/b3rg3t/leo_quire"
   }
 ];
+
+// https://github.com/b3rg3t/leo_quire
 
 export { projects };

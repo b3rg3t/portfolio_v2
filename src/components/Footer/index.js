@@ -5,16 +5,15 @@ import "../Footer/footer.scss";
 const Footer = () => (
   <footer className="footer">
     <p className="credits">
-      Website by {" "}
+      Website by{" "}
       <a className="link" href="https://github.com/b3rg3t">
-        @b3rg3t
+        <b>@b3rg3t</b>
       </a>
       <br />
       <br />
       © copywright twentyninteen
       <br />
       <br />
-      
     </p>
     {/* <Rating /> */}
   </footer>

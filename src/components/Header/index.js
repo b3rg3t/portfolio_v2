@@ -28,7 +28,8 @@ const Header = () => {
     <div className="home">
       <div className="home__content">
         <h1 className="home__content__title">David Berg</h1>
-        <span>Front End Developer</span>
+        <span><b>Front End Developer</b></span>
+        <p>Check out my projects and leave a message if you want to get in contact with me att the bottom of the page!</p>
       </div>
     </div>
   );

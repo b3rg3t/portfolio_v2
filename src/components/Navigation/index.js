@@ -37,7 +37,7 @@ const Navigation = ({ links }) => {
           <div className="navigation__pic">
             <img
               className="navigation__picture"
-              src={require("../../images/profilblurs.png")}
+              src={require("../../images/profilblur.png")}
               alt="foggy forrest"
             />
           </div>

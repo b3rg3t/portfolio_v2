@@ -10,7 +10,7 @@ import Skills from "../Skills";
 import Contact from "../Contact";
 import Information from "../Information";
 import Header from "../Header";
-import Location from "../Location";
+// import Location from "../Location";
 
 // Navigation
 const LINKS = [
@@ -18,7 +18,7 @@ const LINKS = [
   // { id: "skills", label: "Skills", to: "#skills" },
   // { id: "qualities", label: "Qualities", to: "#qualities" },
   { id: "portfolio", label: "Portfolio", to: "#portfolio" },
-  { id: "contact", label: "Contact", to: "#contact" },
+  { id: "contact", label: "Contact", to: "#contact" }
   // { id: "location", label: "Location", to: "#location" }
 ];
 
@@ -35,7 +35,7 @@ class App extends Component {
               </header>
 
               <section className="main__top">
-              <Qualities  />
+                <Qualities />
               </section>
 
               <section id="skills" className="main__first">
@@ -47,17 +47,17 @@ class App extends Component {
               </section>
 
               <section id="portfolio" className="main__three">
-                <Portfolio  />
+                <Portfolio />
               </section>
 
-              <section className="main__fourth">
+              <Contact id="contact" />
+              {/* <section className="main__fourth">
                 <div className="main__fourth__left"></div>
 
                 <div id="location" className="main__fourth__right">
-                  <Location  />
+                  <Location />
                 </div>
-              </section>
-              <Contact id="contact" />
+              </section> */}
             </main>
           </div>
           <Footer />

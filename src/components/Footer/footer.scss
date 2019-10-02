@@ -31,10 +31,11 @@
     color: #666;
 
     .link {
-      color: blue;
+      color: $secondary-color;
       text-decoration: none;
       &:hover {
-        color: $secondary-color;
+        color: white;
+        list-style: line;
       }
     }
   }
