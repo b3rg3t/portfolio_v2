@@ -1,7 +1,9 @@
 @import "../../index.scss";
 
 .skills {
-  max-width: 500px;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.527);
+  border-radius: 10px;
   .skills__ul {
     display: flex;
     justify-content: center;

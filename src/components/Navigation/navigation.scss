@@ -8,8 +8,8 @@
   top: 0;
   z-index: 1000;
   flex-direction: column;
-  width: 16rem;
   font-size: 20px;
+  width: 11rem;
   background-color: $primary-background;
   &:before {
     content: " ";
@@ -39,8 +39,9 @@
       cursor: pointer;
     }
     .navigation__pic {
-      width: 200px;
+      width: 170px;
       .navigation__picture {
+        margin-left: 15px;
         width: 100%;
         border-radius: 50%;
         max-height: 100%;
@@ -48,7 +49,6 @@
         background-color: white;
       }
     }
-
     ul {
       margin: 0;
       padding: 0;
@@ -141,8 +141,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
   height: 100%;
   margin: auto;
   &:focus{
-      outline: none;
+    outline: none;
+}
+  .hamburger__ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
+
   a {
     width: auto;
     cursor: pointer;

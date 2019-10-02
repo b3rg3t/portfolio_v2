@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import "../Header/header.scss";
 
-export default class Header extends Component{
+const Header = () => {
   // constructor(props){
   //   super(props);
   //   this.state = {};
@@ -23,16 +23,15 @@ export default class Header extends Component{
   //   window.addEventListener("scroll", this.handleScroll);
   // }
   // className={this.state.scroll > this.state.top ? "fixed-nav" : ""}
-  render(){
-    return(
-      <div className="home">
-        <div className="home__content">
-          <h1 className="home__content__title">David Berg</h1>
-          <span>Front End Developer</span>
-        </div>
+
+  return (
+    <div className="home">
+      <div className="home__content">
+        <h1 className="home__content__title">David Berg</h1>
+        <span>Front End Developer</span>
       </div>
-    )
-  }
-}
+    </div>
+  );
+};
 
-
+export default Header;

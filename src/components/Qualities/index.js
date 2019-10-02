@@ -31,7 +31,7 @@ const Qualities = () => (
             <h4 className="qualities__boxes__head">Learn</h4>
           </div>
         </header>
-        <p>I always want to learn more</p>
+        <p>I'm always curious and want to learn more</p>
       </div>
     </article>
   </div>

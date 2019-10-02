@@ -6,11 +6,11 @@ import { slide as Menu } from "react-burger-menu";
 
 const Hamburger = ({ links }) => {
   return (
-    <Menu right width={ '200px' }>
-      <div>
-        <div className="hamburger__ul">
+    <Menu right>
+      <div className="hamburger">
+        <ul className="hamburger__ul">
           {links.map(link => (
-            <div key={link.to}>
+            <li key={link.to}>
               <Link
                 to={link.id}
                 offset={-70}
@@ -20,9 +20,9 @@ const Hamburger = ({ links }) => {
               >
                 {link.label}
               </Link>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </Menu>
   );
@@ -37,7 +37,7 @@ const Navigation = ({ links }) => {
           <div className="navigation__pic">
             <img
               className="navigation__picture"
-              src={require("../../images/profilblur.png")}
+              src={require("../../images/profilblurs.png")}
               alt="foggy forrest"
             />
           </div>

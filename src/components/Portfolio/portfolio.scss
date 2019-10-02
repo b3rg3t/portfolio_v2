@@ -2,7 +2,9 @@
 
 .portfolio {
   width: 100%;
+  height: 100%;
   margin: 10px 50px;
+  text-align: center;
   .portfolio__content {
     display: flex;
     flex-wrap: wrap;
@@ -17,16 +19,39 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 50%;
-      min-width: 300px;
-      border-radius: 0 5px 5px 0;
-      background-color: $primary-background;
+      width: 30%;
+      margin-right: 20%;
+      // min-width: 300px;
+      background: url(../../images/marbles.jpg) no-repeat;
+      .portfolio__container__right__innerContainer {
+        h3{
+          margin: 5px;
+        }
+        background-color: rgba(255, 255, 255, 0.575);
+        border-radius: 10px;
+        padding: 50px;
+        .portfolio__container__right__innerContainer__bottom {
+          display: flex;
+          justify-content: flex-end;
+          margin: 0 20px 20px 0;
+          .portfolio__container__right__link {
+            cursor: pointer;
+            color: rgb(37, 37, 37);
+            &:hover {
+              color: $secondary-text-color;
+            }
+          }
+        }
+      }
     }
   }
 }
 @media screen and (max-width: 960px) {
-  .portfolio{
+  .portfolio {
     margin: 0;
   }
+  .portfolio__content__image {
+    width: 100%;
+    min-width: 300px;
+  }
 }
-

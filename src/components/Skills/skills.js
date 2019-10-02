@@ -11,6 +11,9 @@ import XD from "../../images/adobeXDgray.png";
 import VS from "../../images/VSgray.png"
 import NodeJS from "../../images/nodeJSgray.png"
 import Agile from "../../images/AGILEgray.png"
+import Sass from "../../images/sassgray.png"
+import SC from "../../images/styledComponentsgray.png"
+import WP from "../../images/WordPressgray.png"
 
 import CSScolor from "../../images/CSS3.png";
 import HTMLcolor from "../../images/HTML5.png";
@@ -24,8 +27,32 @@ import XDcolor from "../../images/adobeXD.png";
 import VScolor from "../../images/VS.png"
 import NodeJScolor from "../../images/nodeJS.png"
 import Agilecolor from "../../images/AGILE.png"
+import Sasscolor from "../../images/sass.png"
+import SCcolor from "../../images/styledComponents.png"
+import WPcolor from "../../images/WordPress.png"
 
 export const SkillsItem = [
+  {
+    name: "WordPress",
+    pic: WP,
+    hoverPic: WPcolor,
+    title: "WordPress",
+    alt: "WordPress logo picture"
+  },
+  {
+    name: "Styled Components",
+    pic: SC,
+    hoverPic: SCcolor,
+    title: "Styled Components",
+    alt: "Styled Components logo picture"
+  },
+  {
+    name: "Sass",
+    pic: Sass,
+    hoverPic: Sasscolor,
+    title: "Sass",
+    alt: "Sass logo picture"
+  },
   {
     name: "Agile",
     pic: Agile,

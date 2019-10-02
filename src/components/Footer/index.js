@@ -1,6 +1,6 @@
 import React from "react";
 import "../Footer/footer.scss";
-import Rating from "../Rating/index"
+// import Rating from "../Rating/index"
 
 const Footer = () => (
   <footer className="footer">
@@ -16,7 +16,7 @@ const Footer = () => (
       <br />
       
     </p>
-    <Rating />
+    {/* <Rating /> */}
   </footer>
 );
 

@@ -8,7 +8,7 @@ import Portfolio from "../Portfolio";
 import Qualities from "../Qualities";
 import Skills from "../Skills";
 import Contact from "../Contact";
-// import Topcontent from "../Topcontent";
+import Information from "../Information";
 import Header from "../Header";
 import Location from "../Location";
 
@@ -34,29 +34,29 @@ class App extends Component {
                 <Header />
               </header>
 
-              <div className="main__top">
+              <section className="main__top">
               <Qualities  />
-              </div>
+              </section>
 
-              <div id="skills" className="main__first">
+              <section id="skills" className="main__first">
                 <Skills />
-              </div>
+              </section>
 
-              <div id="qualities" className="main__two">
-                
-              </div>
+              <section id="information" className="main__two">
+                <Information />
+              </section>
 
-              <div id="portfolio" className="main__three">
+              <section id="portfolio" className="main__three">
                 <Portfolio  />
-              </div>
+              </section>
 
-              <div className="main__fourth">
+              <section className="main__fourth">
                 <div className="main__fourth__left"></div>
 
                 <div id="location" className="main__fourth__right">
                   <Location  />
                 </div>
-              </div>
+              </section>
               <Contact id="contact" />
             </main>
           </div>

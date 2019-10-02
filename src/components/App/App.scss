@@ -5,7 +5,7 @@
 }
 
 .app__main {
-  margin: 0 0 0 16rem;
+  // margin: 0 0 0 11rem;
 }
 
 article,
@@ -29,18 +29,6 @@ section {
     flex: 100%;
     height: 100vh;
   }
-  .main__arrowUp {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    color: $primary-background;
-    border: 2px solid $primary-background;
-    border-radius: 50%;
-    padding: 10px 15px;
-    font-size: 2em;
-    cursor: pointer;
-    z-index: 15;
-  }
   .main__top {
     flex: 100%;
     margin: 50px 0;
@@ -62,13 +50,12 @@ section {
     height: 400px;
   }
   .main__three {
-    z-index: -10;
     width: 100%;
+    margin-left: 11rem;
     display: flex;
     position: relative;
   }
   .main__fourth {
-    z-index: -10;
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -97,7 +84,7 @@ section {
     }
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 960px) {
   .app__main {
     margin: 0;
   }
