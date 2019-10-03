@@ -34,7 +34,7 @@
       color: $secondary-color;
       text-decoration: none;
       &:hover {
-        color: white;
+        color: $primary-color;
         list-style: line;
       }
     }

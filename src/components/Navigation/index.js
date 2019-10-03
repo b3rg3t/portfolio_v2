@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../Navigation/navigation.scss";
 import * as Icon from "react-feather";
 import { Link } from "react-scroll";
-// import { slide as Menu } from "react-burger-menu";
+import { slide as Menu } from "react-burger-menu";
 import { links } from "./links";
 
 const Navigation = () => {
@@ -23,7 +23,9 @@ const Navigation = () => {
 
   return (
     <div>
-      {/* <Hamburger /> */}
+      {/* <div className="navigation__container__fullscreen"> */}
+        <Hamburger />
+      {/* </div>   */}
       <header className="header">
         <div className="navigation__header">
           <h1 className="navigation__header__logo">David Berg</h1>
@@ -56,10 +58,36 @@ const Navigation = () => {
           </a>
         </div>
       </header>
-      <nav className={scroll > top ? "fixed-nav" : ""}>
-        <ul>
+      <div className="navigation__container__fullscreen">
+        <nav className={scroll > top ? "fixed-nav" : ""}>
+          <ul>
+            {links.map(link => (
+              <li key={link.to} className="navigation__container__link">
+                <Link
+                  to={link.id}
+                  offset={-70}
+                  duration={200}
+                  spy={true}
+                  smooth={true}
+                >
+                  <b>{link.label}</b>
+                </Link>
+                {/* <span>|</span> */}
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </div>
+  );
+};
+const Hamburger = () => {
+  return (
+    <Menu right>
+      <div className="hamburger">
+        <ul className="hamburger__ul">
           {links.map(link => (
-            <li key={link.to} className="navigation__container__link">
+            <li key={link.to}>
               <Link
                 to={link.id}
                 offset={-70}
@@ -67,38 +95,14 @@ const Navigation = () => {
                 spy={true}
                 smooth={true}
               >
-                <b>{link.label}</b>
+                {link.label}
               </Link>
-              {/* <span>|</span> */}
             </li>
           ))}
         </ul>
-      </nav>
-    </div>
+      </div>
+    </Menu>
   );
 };
-// const Hamburger = () => {
-//   return (
-//     <Menu right>
-//       <div className="hamburger">
-//         <ul className="hamburger__ul">
-//           {links.map(link => (
-//             <li key={link.to}>
-//               <Link
-//                 to={link.id}
-//                 offset={-70}
-//                 duration={200}
-//                 spy={true}
-//                 smooth={true}
-//               >
-//                 {link.label}
-//               </Link>
-//             </li>
-//           ))}
-//         </ul>
-//       </div>
-//     </Menu>
-//   );
-// };
 
 export default Navigation;

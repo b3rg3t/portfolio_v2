@@ -1,6 +1,5 @@
 @import "../../index.scss";
 .contact {
-  width: 100%;
   .contact__head {
     @include headlinebox($secondary-background);  
     margin: 50px 0;
@@ -35,10 +34,11 @@
     }
     .contact__form__button {
       border-radius: 10px;
+      padding: 10px;
+      font-weight: bold;
       cursor: pointer;
     }
   }
-
   textarea {
     width: 80%;
     background: rgba(211, 211, 211, 0.178);
@@ -60,6 +60,7 @@
 
 @media screen and (max-width: 960px) {
   .contact__form {
-    width: 100vw !important;
+    width: 100% !important;
   }
+  
 }

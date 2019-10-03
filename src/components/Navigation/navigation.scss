@@ -14,10 +14,12 @@
     justify-content: center;
     .navigation__header__logo {
       margin: 0;
+      text-shadow: 2px 2px 2px #444444;
     }
   }
   .navigation__center {
     flex: 1;
+    text-shadow: 2px 2px 2px #444444;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,8 +33,9 @@
     a {
       margin: 0 10px;
       color: white;
+      text-shadow: 2px 2px 2px #444444;
       &:hover {
-        color: $secondary-color;
+        color: $primary-color;
       }
     }
   }
@@ -65,6 +68,7 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
+        
         color: $third-text-color;
         &:hover {
           color: $secondary-color;
@@ -104,11 +108,15 @@ nav {
 .bm-cross-button {
   height: 24px;
   width: 24px;
+  &:hover{
+    color: blue;
+  }
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
   background: #bdc3c7;
+
 }
 
 /*
@@ -118,12 +126,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-menu-wrap {
   position: fixed;
   height: 100%;
+  display: none;
 }
 
 /* General sidebar styles */
 .bm-menu {
   background: #373a47;
-  font-size: 1.15em;
+  font-size: 1.5em;
   display: flex;
   justify-content: center;
   padding-top: 50%;
@@ -143,8 +152,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Individual item */
 .bm-item {
   display: inline-block;
-  height: 100%;
+  display: flex;
   margin: auto;
+  
   &:focus {
     outline: none;
   }
@@ -159,18 +169,28 @@ Note: Beware of modifying this element as it can break the animations - you shou
     cursor: pointer;
   }
 }
-
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+  display: none;
 }
 
 @media screen and (max-width: 960px) {
   .header,
-  nav {
+  .navigation__container__fullscreen{
     display: none;
   }
   .bm-burger-button {
+    display: block;
+    display: flex;
+  }
+  .hamburger__ul{
+    flex-direction: column;
+  }
+  .bm-menu-wrap {
+    display: block;
+  }
+  .bm-overlay {
     display: block;
   }
 }

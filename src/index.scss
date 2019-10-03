@@ -19,7 +19,7 @@ code {
 
 //Colors website
 $primary-color: #525dce;
-$secondary-color: rgb(51, 194, 241);
+$secondary-color: rgb(61, 125, 228);
 
 $primary-background: rgb(230, 230, 230);
 $secondary-background: #666;
@@ -51,6 +51,7 @@ $font-family-cursive:"Satisfy", cursive;
   padding: .55rem 10px;
   z-index: 10;
   border-radius: 10px;
+  text-shadow: 2px 2px 2px #444444;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Satisfy&display=swap");

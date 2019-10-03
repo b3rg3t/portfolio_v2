@@ -1,50 +1,44 @@
 @import "../../index.scss";
-.q {
-  text-align: center;
-  margin: 50px 0;
-
-  // width: 100%;
-  .q__h {
+.qualities {
+  margin: 70px 0;
+  .qualities__head {
     @include headlinebox($secondary-background);
   }
-}
-.qualities {
-  display: flex;
-  height: 100%;
-  max-width: 960px;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  position: relative;
-  .qualities__boxes {
+  .qualities__box {
     display: flex;
+    height: 100%;
     max-width: 960px;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin: auto;
-    color: $primary-text-color;
-    flex-wrap: wrap;
-    text-align: center;
-    border-radius: 5px;
-    max-width: 230px;
-    flex: 1 1 200px;
-    // -webkit-box-shadow: 0px 0px 5px 0px rgba(122, 122, 122, 1);
-    // -moz-box-shadow: 0px 0px 5px 0px rgba(122, 122, 122, 1);
-    // box-shadow: 0px 0px 5px 0px rgba(122, 122, 122, 1);
-    .qualities__boxes__content {
-      flex: 1;
-      display: block;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
+    position: relative;
+    .qualities__boxes {
       display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-    }
-    .qualities__boxes__logo {
-      width: 50px;
-      height: 50px;
-      color: $secondary-color;
+      max-width: 960px;
+      flex-wrap: wrap;
+      margin: auto;
+      color: $primary-text-color;
+      flex-wrap: wrap;
+      text-align: center;
+      border-radius: 5px;
+      max-width: 230px;
+      flex: 1 1 200px;
+      .qualities__boxes__content {
+        flex: 1;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+      .qualities__boxes__logo {
+        width: 50px;
+        height: 50px;
+        color: $secondary-color;
+      }
     }
   }
 }

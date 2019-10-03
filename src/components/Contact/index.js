@@ -42,7 +42,6 @@ const Contact = () => {
           onChange={e => setMessage(e.target.value)}
           placeholder="Write a message"
         />
-
         <input
           className="contact__form__button"
           type="submit"

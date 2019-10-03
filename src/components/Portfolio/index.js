@@ -7,7 +7,9 @@ import { projects } from "./projects";
 const Portfolio = () => {
   return (
     <div className="portfolio">
-    <h3 className="portfolio__head">Portfolio</h3>
+      <div className="portfolio__container">
+        <h3 className="portfolio__container__head">Portfolio</h3>
+      </div>
       <div className="portfolio__imageGallery">
         <ImageGallery
           items={projects}

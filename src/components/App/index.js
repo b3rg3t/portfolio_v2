@@ -12,13 +12,11 @@ import Information from "../Information";
 import Header from "../Hero";
 // import Location from "../Location";
 
-
-
 class App extends Component {
   render() {
     return (
       <div className="app">
-        <Navigation/>
+        <Navigation />
         <div className="app__main">
           <div className="app__main__content">
             <main className="main">
@@ -42,14 +40,10 @@ class App extends Component {
                 <Portfolio />
               </section>
 
-              <Contact id="contact" />
-              {/* <section className="main__fourth">
-                <div className="main__fourth__left"></div>
+              <section id="contact" className="main__fourth">
+                <Contact id="contact" />
+              </section>
 
-                <div id="location" className="main__fourth__right">
-                  <Location />
-                </div>
-              </section> */}
             </main>
           </div>
           <Footer />
