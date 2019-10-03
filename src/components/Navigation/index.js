@@ -1,64 +1,37 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../Navigation/navigation.scss";
 import * as Icon from "react-feather";
 import { Link } from "react-scroll";
-import { slide as Menu } from "react-burger-menu";
+// import { slide as Menu } from "react-burger-menu";
+import { links } from "./links";
 
-const Hamburger = ({ links }) => {
-  return (
-    <Menu right>
-      <div className="hamburger">
-        <ul className="hamburger__ul">
-          {links.map(link => (
-            <li key={link.to}>
-              <Link
-                to={link.id}
-                offset={-70}
-                duration={200}
-                spy={true}
-                smooth={true}
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </Menu>
-  );
-};
+const Navigation = () => {
+  // const [height, setHeigt] = useState(null);
+  const [scroll, setScroll] = useState(null);
+  const [top, setTop] = useState(null);
 
-const Navigation = ({ links }) => {
+  const handleScroll = () => {
+    setScroll(window.scrollY);
+  };
+  useEffect(() => {
+    console.log("useEffect ran");
+    const el = document.querySelector("nav");
+    setTop(el.offsetTop);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  },[]);
+
   return (
-    <nav>
-      <Hamburger links={links} />
-      <div className="navigation">
-        <div className="navigation__container">
-          <div className="navigation__pic">
-            <img
-              className="navigation__picture"
-              src={require("../../images/profilblur.png")}
-              alt="foggy forrest"
-            />
-          </div>
+    <div>
+      {/* <Hamburger /> */}
+      <header className="header">
+        <div className="navigation__header">
+          <h1 className="navigation__header__logo">David Berg</h1>
         </div>
-
-        <div className="navigation__container">
-          <ul>
-            {links.map(link => (
-              <li key={link.to} className="navigation__container__link">
-                <Link
-                  to={link.id}
-                  offset={-70}
-                  duration={200}
-                  spy={true}
-                  smooth={true}
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
+        <div className="navigation__center">
+          <span>
+            <b>Front-End Developer</b>
+          </span>
         </div>
         <div className="navigation__container">
           <a
@@ -82,9 +55,49 @@ const Navigation = ({ links }) => {
             />
           </a>
         </div>
-      </div>
-    </nav>
+      </header>
+      <nav className={scroll > top ? "fixed-nav" : ""}>
+        <ul>
+          {links.map(link => (
+            <li key={link.to} className="navigation__container__link">
+              <Link
+                to={link.id}
+                offset={-70}
+                duration={200}
+                spy={true}
+                smooth={true}
+              >
+                <b>{link.label}</b>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
   );
 };
+// const Hamburger = () => {
+//   return (
+//     <Menu right>
+//       <div className="hamburger">
+//         <ul className="hamburger__ul">
+//           {links.map(link => (
+//             <li key={link.to}>
+//               <Link
+//                 to={link.id}
+//                 offset={-70}
+//                 duration={200}
+//                 spy={true}
+//                 smooth={true}
+//               >
+//                 {link.label}
+//               </Link>
+//             </li>
+//           ))}
+//         </ul>
+//       </div>
+//     </Menu>
+//   );
+// };
 
 export default Navigation;

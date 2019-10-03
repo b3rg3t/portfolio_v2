@@ -1,78 +1,84 @@
 @import "../../index.scss";
-
-.navigation {
-  color: $primary-text-color;
+.header {
+  height: 60px;
+  color: white;
   display: flex;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  flex-direction: column;
-  font-size: 20px;
-  width: 11rem;
-  background-color: $primary-background;
-  &:before {
-    content: " ";
-    color: $primary-text-color;
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-color: $primary-background;
-    transform-origin: bottom left;
-    -ms-transform: $skew-negative-h;
-    -webkit-transform: $skew-negative-h;
-    transform: $skew-negative-h;
-    -webkit-box-shadow: 5px 5px 5px -6px rgba(0, 0, 0, 0.329);
-    -moz-box-shadow: 5px 5px 5px -6px rgba(0, 0, 0, 0.329);
-    box-shadow: 5px 5px 5px -6px rgba(0, 0, 0, 0.329);
+  width: 100%;
+  position: absolute;
+  font-family: "Satisfy", cursive;
+  background-color: $secondary-color;
+  .navigation__header {
+    flex: 1;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    .navigation__header__logo {
+      margin: 0;
+    }
+  }
+  .navigation__center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .navigation__container {
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1 1 auto;
-    .navigation__container__link {
-      cursor: pointer;
-    }
-    .navigation__pic {
-      width: 170px;
-      .navigation__picture {
-        margin-left: 15px;
-        width: 100%;
-        border-radius: 50%;
-        max-height: 100%;
-        border: 3px solid $secondary-color;
-        background-color: white;
+    align-items: center;
+    a {
+      margin: 0 10px;
+      color: white;
+      &:hover {
+        color: $secondary-color;
       }
     }
-    ul {
-      margin: 0;
-      padding: 0;
-      li {
-        list-style: none;
-      }
+  }
+}
+nav {
+  background-color: rgba(255, 255, 255, 0.774);
+  z-index: 10;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  margin-top: 60px;
+  top: 0;
+  -webkit-box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    li {
+      padding: 10px;
+      list-style: none;
       a {
-        color: $primary-text-color;
-        text-decoration: none;
+        cursor: pointer;
+        flex: 1;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         &:hover {
-          color: $third-text-color;
+          color: $secondary-color;
         }
       }
     }
   }
-  .navigation__container__icons {
-    margin: 15px;
-    color: $primary-text-color;
-
-    &:hover {
-      color: $third-text-color;
-    }
-  }
 }
+.fixed-nav {
+  position: fixed;
+  z-index: 11;
+  margin-top: 0;
+  // background: rgba(255, 255, 255, 0.781);
+}
+
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
@@ -121,7 +127,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
   display: flex;
   justify-content: center;
   padding-top: 50%;
-  
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -140,10 +145,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
   display: inline-block;
   height: 100%;
   margin: auto;
-  &:focus{
+  &:focus {
     outline: none;
-}
-  .hamburger__ul{
+  }
+  .hamburger__ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -161,7 +166,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 @media screen and (max-width: 960px) {
-  .navigation {
+  .header,
+  nav {
     display: none;
   }
   .bm-burger-button {

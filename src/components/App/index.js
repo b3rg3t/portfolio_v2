@@ -12,27 +12,19 @@ import Information from "../Information";
 import Header from "../Header";
 // import Location from "../Location";
 
-// Navigation
-const LINKS = [
-  { id: "home", label: "Home", to: "#home" },
-  // { id: "skills", label: "Skills", to: "#skills" },
-  // { id: "qualities", label: "Qualities", to: "#qualities" },
-  { id: "portfolio", label: "Portfolio", to: "#portfolio" },
-  { id: "contact", label: "Contact", to: "#contact" }
-  // { id: "location", label: "Location", to: "#location" }
-];
+
 
 class App extends Component {
   render() {
     return (
       <div className="app">
-        <Navigation links={LINKS} />
+        <Navigation/>
         <div className="app__main">
           <div className="app__main__content">
             <main className="main">
-              <header id="home" className="main__header">
+              <div id="home" className="main__header">
                 <Header />
-              </header>
+              </div>
 
               <section className="main__top">
                 <Qualities />

@@ -22,7 +22,7 @@ $primary-color: #525dce;
 $secondary-color: rgb(51, 194, 241);
 
 $primary-background: rgb(230, 230, 230);
-$secondary-background: rgb(138, 138, 138);
+$secondary-background: #666;
 $third-background: rgb(126, 125, 125);
 
 $primary-text-color: rgb(37, 37, 37);
@@ -50,12 +50,6 @@ $skew-negative-h: (skew(-3deg, 0deg));
   border-radius: 5px;
 }
 
-@mixin boxhedline($secondary-background) { 
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  padding: .55rem 10px;
-  z-index: 10;
-  border-radius: 5px;
-  border: 3px solid $secondary-background;
-}
+// .head {
+//   @include headlinebox($secondary-background);
+// }
