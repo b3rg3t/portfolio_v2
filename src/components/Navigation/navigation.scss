@@ -65,6 +65,7 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
+        color: $third-text-color;
         &:hover {
           color: $secondary-color;
         }
@@ -76,7 +77,6 @@ nav {
   position: fixed;
   z-index: 11;
   margin-top: 0;
-  // background: rgba(255, 255, 255, 0.781);
 }
 
 /* Position and sizing of burger button */

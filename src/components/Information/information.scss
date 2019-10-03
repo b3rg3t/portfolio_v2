@@ -8,17 +8,6 @@
   justify-content: center;
   align-items: center;
   .information__content__title {
-    background-image: linear-gradient(
-      transparent 0%,
-      transparent calc(50% - 8px),
-      $secondary-color calc(50%),
-      $secondary-color 100%
-    );
-    &:hover {
-      transition: background-position 120ms ease-in-out,
-        padding 120ms ease-in-out;
-        background-size: 100% 200%;
-        background-position: 0 0;
-    }
+    @include headlinebox($secondary-background);
   }
 }

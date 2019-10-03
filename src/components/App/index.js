@@ -9,7 +9,7 @@ import Qualities from "../Qualities";
 import Skills from "../Skills";
 import Contact from "../Contact";
 import Information from "../Information";
-import Header from "../Header";
+import Header from "../Hero";
 // import Location from "../Location";
 
 

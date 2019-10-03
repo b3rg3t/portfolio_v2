@@ -19,7 +19,7 @@ const Navigation = () => {
     setTop(el.offsetTop);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  },[]);
+  }, []);
 
   return (
     <div>
@@ -69,6 +69,7 @@ const Navigation = () => {
               >
                 <b>{link.label}</b>
               </Link>
+              {/* <span>|</span> */}
             </li>
           ))}
         </ul>

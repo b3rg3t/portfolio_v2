@@ -5,7 +5,7 @@ const Information = () => {
     return (
       <div className="information">
         <div className="information__content">
-          <h1 className="information__content__title">LIA</h1>
+          <h3 className="information__content__title">LIA</h3>
           <span>Period 11/11 2019 => 27/3 2020</span>
         </div>
       </div>

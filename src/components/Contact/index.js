@@ -14,7 +14,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <form className="contact__form" onSubmit={handleSubmit}>
-        <h3 className="contact__head">Contact</h3>
+        <h4 className="contact__head">Contact</h4>
         <label style={{ display: "none" }}>Name:</label>
         <input
           className="contact__form__input"

@@ -1,5 +1,5 @@
 import React from "react";
-import "../Header/hero.scss";
+import "./hero.scss";
 
 const Hero = () => {
   return (
@@ -10,8 +10,6 @@ const Hero = () => {
           src={require("../../images/profilblur.png")}
           alt="foggy forrest"
         />
-        <h1 className="hero__content__title">David Berg</h1>
-
         <p>
           Check out my projects and leave a message if you want to get in
           contact with me att the bottom of the page!

@@ -7,6 +7,7 @@ import { projects } from "./projects";
 const Portfolio = () => {
   return (
     <div className="portfolio">
+    <h3 className="portfolio__head">Portfolio</h3>
       <div className="portfolio__imageGallery">
         <ImageGallery
           items={projects}

@@ -25,9 +25,9 @@ $primary-background: rgb(230, 230, 230);
 $secondary-background: #666;
 $third-background: rgb(126, 125, 125);
 
-$primary-text-color: rgb(37, 37, 37);
-$secondary-text-color: rgb(241, 241, 241);
-$third-text-color: gray;
+$primary-text-color: rgb(26, 25, 25);
+$secondary-text-color: white;
+$third-text-color: rgb(88, 87, 87);
 
 //Skew properties
 //Vertical
@@ -37,19 +37,25 @@ $skew-negative-box: (skew( 3deg, 0deg));
 //Horizontal
 $skew-negative-h: (skew(-3deg, 0deg));
 
+$font-family-cursive:"Satisfy", cursive;
+
 @mixin headlinebox($secondary-background) {
   align-items: center;
+  font-family: $font-family-cursive;
   color: $secondary-text-color;
   width: 200px;
   margin: auto;
-  background-color: $secondary-background;
+  background-color: $secondary-color;
   position: relative;
   text-align: center;
   padding: .55rem 10px;
   z-index: 10;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
+@import url("https://fonts.googleapis.com/css?family=Satisfy&display=swap");
+
+ 
 // .head {
 //   @include headlinebox($secondary-background);
 // }
