@@ -5,18 +5,16 @@
     @include headlinebox($secondary-background);
   }
   .qualities__box {
+    padding-top: 40px;
     display: flex;
-    height: 100%;
     max-width: 960px;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     margin: auto;
-    position: relative;
     .qualities__boxes {
-      display: flex;
+      // border: 1px solid gray;
+      margin-top:20px;
       max-width: 960px;
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
       margin: auto;
       color: $primary-text-color;
       flex-wrap: wrap;
@@ -25,13 +23,9 @@
       max-width: 230px;
       flex: 1 1 200px;
       .qualities__boxes__content {
-        flex: 1;
+        margin-top: 20px;
+        height: 280px;
         display: block;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        display: flex;
-        justify-content: space-between;
         flex-direction: column;
       }
       .qualities__boxes__logo {

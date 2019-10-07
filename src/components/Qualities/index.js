@@ -33,7 +33,7 @@ const Qualities = () => (
               <h4 className="qualities__boxes__head">Build</h4>
             </header>
           </div>
-          <p>I build projects from scratch using React, Vue and Vanilla JS</p>
+          <p>I build projects from scratch using React, NextJS,  Vue and Vanilla JS</p>
         </div>
       </article>
 

@@ -6,7 +6,31 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const handleSubmit = event => {
-    alert("This was submitted: \n" + name + "\n" + email + "\n" + message);
+    const request = JSON.stringify({
+      name: name, email: email, message: message
+    });
+    console.log(request);
+    fetch("https://www.usebasin.com/f/c177f0920b56.json", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      body: `${request}`
+    }).then(response => {
+      if (response.ok) {
+        console.log(!"response ok");
+        alert("Your message was submitted successfully, David will be in contact with you soon.")
+        setName("")
+        setEmail("")
+        setMessage("")
+        event.preventDefault();
+      }
+      else{
+        console.log("error!")
+        alert("Something went wrong, try again later")
+        event.preventDefault();
+      }
+    });
     event.preventDefault();
   };
 
@@ -48,10 +72,12 @@ const Contact = () => {
           value="Submit"
           disabled={isInvalid}
         />
-        <br/>
+        <br />
         {isInvalid ? (
           <span>*You have to fill in all fields to submit.</span>
-        ) : <br/>}
+        ) : (
+          <br />
+        )}
       </form>
     </div>
   );

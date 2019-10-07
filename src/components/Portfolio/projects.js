@@ -9,7 +9,7 @@ const projects = [
     original: ProjectXY,
     thumbnail: ProjectXY,
     originalAlt: "Grex",
-    description: "Project XY, This is a website",
+    description: "Project XY is a rockband in Sweden",
     sizes: "height: 300px, width: 300px",
     github: "https://github.com/b3rg3t/grex_candy"
   },

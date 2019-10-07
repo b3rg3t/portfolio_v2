@@ -86,8 +86,6 @@ const Hamburger = () => {
   };
   const closeMenu = () => {
     console.log("close menu ran");
-
-
     setMenuOpen(false);
   };
   return (
@@ -113,6 +111,28 @@ const Hamburger = () => {
             </li>
           ))}
         </ul>
+      </div>
+      <div className="hamburger__links">
+        <a
+          className="link"
+          href="https://www.facebook.com/davidberg1990"
+          title="Share"
+        >
+          <Icon.Share2 className="navigation__container__icons" />
+        </a>
+        <a className="link" href="https://github.com/b3rg3t" title="Github">
+          <Icon.GitHub className="navigation__container__icons" />
+        </a>
+        <a
+          className="link"
+          href="https://www.linkedin.com/in/david-berg-385530175"
+          title="Linkedin"
+        >
+          <Icon.Linkedin
+            xlinkTitle="linked in"
+            className="navigation__container__icons"
+          />
+        </a>
       </div>
     </Menu>
   );
