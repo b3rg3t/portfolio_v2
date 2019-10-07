@@ -1,6 +1,7 @@
 import ProjectXY from "../../images/projectXY.jpg";
 import Quire from "../../images/Quire.png";
 import DavidBerg from "../../images/AndersBerg.png";
+// import { myRenderItem } from "./index"
 
 const projects = [
   {
@@ -8,7 +9,8 @@ const projects = [
     original: ProjectXY,
     thumbnail: ProjectXY,
     originalAlt: "Grex",
-    description: "This is a website",
+    description: "Project XY, This is a website",
+    sizes: "height: 300px, width: 300px",
     github: "https://github.com/b3rg3t/grex_candy"
   },
   {

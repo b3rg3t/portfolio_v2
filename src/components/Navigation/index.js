@@ -6,16 +6,16 @@ import { slide as Menu } from "react-burger-menu";
 import { links } from "./links";
 
 const Navigation = () => {
-  // const [height, setHeigt] = useState(null);
-  const [scroll, setScroll] = useState(null);
-  const [top, setTop] = useState(null);
+  const [scroll, setScroll] = useState(0);
+  const [top, setTop] = useState(0);
 
   const handleScroll = () => {
     setScroll(window.scrollY);
   };
+
   useEffect(() => {
     console.log("useEffect ran");
-    const el = document.querySelector("nav");
+    const el = document.querySelector(".nav");
     setTop(el.offsetTop);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -23,9 +23,7 @@ const Navigation = () => {
 
   return (
     <div>
-      {/* <div className="navigation__container__fullscreen"> */}
-        <Hamburger />
-      {/* </div>   */}
+      <Hamburger />
       <header className="header">
         <div className="navigation__header">
           <h1 className="navigation__header__logo">David Berg</h1>
@@ -58,8 +56,9 @@ const Navigation = () => {
           </a>
         </div>
       </header>
-      <div className="navigation__container__fullscreen">
-        <nav className={scroll > top ? "fixed-nav" : ""}>
+
+      <nav>
+        <div className="nav" id={scroll > top ? "fixed-nav" : ""}>
           <ul>
             {links.map(link => (
               <li key={link.to} className="navigation__container__link">
@@ -72,18 +71,31 @@ const Navigation = () => {
                 >
                   <b>{link.label}</b>
                 </Link>
-                {/* <span>|</span> */}
               </li>
             ))}
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
   );
 };
 const Hamburger = () => {
+  const [menuOpen, setMenuOpen] = useState();
+  const handleStateChange = state => {
+    setMenuOpen(state.isOpen);
+  };
+  const closeMenu = () => {
+    console.log("close menu ran");
+
+
+    setMenuOpen(false);
+  };
   return (
-    <Menu right>
+    <Menu
+      right
+      isOpen={menuOpen}
+      onStateChange={state => handleStateChange(state)}
+    >
       <div className="hamburger">
         <ul className="hamburger__ul">
           {links.map(link => (
@@ -94,6 +106,7 @@ const Hamburger = () => {
                 duration={200}
                 spy={true}
                 smooth={true}
+                onClick={closeMenu}
               >
                 {link.label}
               </Link>
