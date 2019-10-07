@@ -9,7 +9,9 @@ const projects = [
     original: ProjectXY,
     thumbnail: ProjectXY,
     originalAlt: "Grex",
-    description: "Project XY is a rockband in Sweden",
+    thumbnailLabel: "Project XY",
+    thumbnailTitle: "Project XY",
+    description: "Project XY",
     sizes: "height: 300px, width: 300px",
     github: "https://github.com/b3rg3t/grex_candy"
   },
@@ -18,7 +20,7 @@ const projects = [
     original: ProjectXY,
     thumbnail: ProjectXY,
     originalAlt: "Project XY",
-    description: "This is a website",
+    description: "Project XY",
     thumbnailLabel: "Project XY",
     thumbnailTitle: "Project XY",
   },
@@ -28,7 +30,7 @@ const projects = [
     thumbnail: Quire,
     originalAlt: "Quire notepad",
     thumbnailLabel: "Quire",
-    description: "This is a website",
+    description: "Quire",
     github: "https://github.com/b3rg3t/leo_quire"
   },
   {
@@ -38,7 +40,7 @@ const projects = [
     originalAlt: "David Anders",
     thumbnailLabel: "David Berg",
     originalTitle: "David Anders",
-    description: "This is a website",
+    description: "David Anders",
     github: "https://github.com/b3rg3t/leo_quire"
   }
 ];

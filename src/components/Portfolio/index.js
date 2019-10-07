@@ -1,21 +1,35 @@
-import React, {useState}from "react";
+import React, { useState, useEffect } from "react";
 import "../Portfolio/portfolio.scss";
 import ImageGallery from "react-image-gallery";
+// import * as Icon from "react-feather";
 
 import { projects } from "./projects";
 
 const Portfolio = () => {
-  const [currentIndex, setCurrentIndex] = useState()
-  const handleStateChange = state => {
-    setCurrentIndex(state.currentIndex);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const SetState = index => {
+    setCurrentIndex(index);
   };
-  const showDescripion = () =>{
-    console.log("showDesciption ran")
-    
-    var content = projects.map(proj => <h1>{proj}</h1>)
+  // var projectSpread = { ...projects };
+  // var res = Object.keys(projectSpread).map(k => {
+  //   return [projectSpread[k]];
+  // });
+
+  // console.log(res);
+  const showDescripion = () => {
+    console.log("showDesciption ran");
+    var content = projects.map(proj => {
+      if (proj.id === currentIndex) {
+        return proj.description + " " + proj.github;
+      } else {
+      }
+    });
     var desContainer = document.querySelector(".portfolio__description");
-    return desContainer.innerHTML = content
-  }
+    return (desContainer.innerHTML = content);
+  };
+  useEffect(() => {
+    showDescripion();
+  });
   return (
     <div className="portfolio">
       <div className="portfolio__container">
@@ -23,19 +37,21 @@ const Portfolio = () => {
       </div>
       <div className="portfolio__imageGallery">
         <ImageGallery
-          onStateChange={state => handleStateChange(state)}
           items={projects}
           thumbnailPosition={"right"}
           lazyLoad={true}
           showPlayButton={false}
           showFullscreenButton={false}
-          onClick={showDescripion}
+          onSlide={index => SetState(index)}
+          onThumbnailClick={(e, index) => SetState(index)}
         />
       </div>
-      <div className="portfolio__description"></div>
+      <div
+        className="portfolio__description"
+        onClick={e => console.log(e.target)}
+      ></div>
     </div>
   );
 };
-
 
 export default Portfolio;
