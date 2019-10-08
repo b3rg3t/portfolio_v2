@@ -24,8 +24,8 @@ const Portfolio = () => {
                 <p>{proj.text}</p>
                 <div className="showDescription__container__links">
                   {proj.github ? (
-                    <div>
-                      <span>Github: </span>
+                    <div className="showDescription__container__link">
+                      <span>Repository: </span>
                       <a
                         className="link"
                         href={proj.github}
@@ -35,12 +35,12 @@ const Portfolio = () => {
                       </a>
                     </div>
                   ) : (
-                    <div>
-                      <span>Github: </span> <Icon.X />
+                    <div className="showDescription__container__link">
+                      <span>Repository: </span> <Icon.X />
                     </div>
                   )}
                   {proj.website ? (
-                    <div>
+                    <div className="showDescription__container__link">
                       <span>Website: </span>
                       <a
                         className="link"
@@ -70,7 +70,7 @@ const Portfolio = () => {
         <div className="portfolio__imageGallery__pictures">
           <ImageGallery
             items={projects}
-            thumbnailPosition={"right"}
+            // thumbnailPosition={"right"}
             lazyLoad={true}
             showPlayButton={false}
             showFullscreenButton={false}

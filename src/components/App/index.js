@@ -28,20 +28,20 @@ class App extends Component {
                 <Qualities />
               </section>
 
-              <section id="skills" className="main__first">
+              <section className="main__first">
                 <Skills />
               </section>
 
-              <section id="information" className="main__two">
+              <section className="main__two">
                 <Information />
               </section>
 
-              <section id="portfolio" className="main__three">
+              <section className="main__three">
                 <Portfolio />
               </section>
 
-              <section id="contact" className="main__fourth">
-                <Contact id="contact" />
+              <section className="main__fourth">
+                <Contact />
               </section>
 
             </main>
