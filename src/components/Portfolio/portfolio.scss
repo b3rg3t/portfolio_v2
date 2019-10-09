@@ -23,7 +23,7 @@
   }
   .portfolio__imageGallery {
     background-color: rgba(255, 255, 255, 0.658);
-    width: 80%;
+    width: 60%;
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -35,9 +35,12 @@
     -webkit-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
     -moz-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
     box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
-    // .portfolio__imageGallery__pictures{
+    .image-gallery-content{
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
+      -moz-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
+      box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
       
-    // }
+    }
     .image-gallery-left-nav,
     .image-gallery-right-nav {
       color: #fff;
@@ -59,10 +62,10 @@
       border-radius: 10px;
     }
     .image-gallery-thumbnails{
-      background-color: white;
-      -webkit-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
-      -moz-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
-      box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
+      background-color: $primary-background;
+    //   -webkit-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
+    //   -moz-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
+    //   box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
     }
     .image-gallery-thumbnail.active {
       border: 3px solid $secondary-color;

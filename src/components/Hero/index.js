@@ -10,9 +10,9 @@ const Hero = () => {
           src={require("../../images/profilblur.png")}
           alt="foggy forrest"
         />
+        <h2>Welcome!</h2>
         <p>
-          Check out my projects and leave a message if you want to get in
-          contact with me att the bottom of the page!
+          Are you looking for a front-end developer?
         </p>
       </div>
     </div>
