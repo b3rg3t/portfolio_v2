@@ -23,6 +23,12 @@ const Portfolio = () => {
                 <h4>{proj.originalAlt}</h4>
                 <p>{proj.text}</p>
                 <div className="showDescription__container__links">
+                  {proj.status ? (
+                    <div className="showDescription__container__link">
+                      <span>Status: </span>
+                      <span>{proj.status === "build" ? <Icon.CloudSnow /> : <Icon.Sun />}</span>
+                    </div>
+                  ) : null}
                   {proj.github ? (
                     <div className="showDescription__container__link">
                       <span>Repository: </span>

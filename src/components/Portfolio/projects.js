@@ -66,6 +66,7 @@ const projects = [
     originalAlt: "David Berg",
     thumbnailTitle: "Project XY",
     sizes: "height: 300px, width: 300px",
+    status: "sun",
     github: "https://github.com/b3rg3t/grex_candy",
     website: "http://davidanders.se/#/",
     text: "This was my very first project in react. It was a portfolio website and it was a fun way to start using react."
@@ -77,6 +78,7 @@ const projects = [
     originalAlt: "David Berg",
     thumbnailTitle: "Project XY",
     sizes: "height: 300px, width: 300px",
+    status: "build",
     github: "https://github.com/b3rg3t/vendre_proud",
     text: "Proud is a webb application to Slack that collects messages from your slack workspace channel where you want to praise a co-worker. You can send messages from Proud into a specific channel on Slack. Join different groups."
   }
