@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../Portfolio/portfolio.scss";
 import ImageGallery from "react-image-gallery";
-import * as Icon from "react-feather";
 
 import { projects } from "./projects";
 
@@ -10,63 +9,6 @@ const Portfolio = () => {
   const SetState = index => {
     setCurrentIndex(index);
   };
-  const ShowDescripion = () => {
-    console.log("showDesciption ran");
-    var project = projects.filter(project => {
-      return project.id === currentIndex ? project : null;
-    });
-    return (
-      <div className="showDescription">
-        {project
-          ? project.map((proj, index) => (
-              <div key={index} className="showDescription__container">
-                <h4>{proj.originalAlt}</h4>
-                <p>{proj.text}</p>
-                <div className="showDescription__container__links">
-                  {proj.status ? (
-                    <div className="showDescription__container__link">
-                      <span>Status: </span>
-                      <span>{proj.status === "build" ? <Icon.CloudSnow /> : <Icon.Sun />}</span>
-                    </div>
-                  ) : null}
-                  {proj.github ? (
-                    <div className="showDescription__container__link">
-                      <span>Repository: </span>
-                      <a
-                        className="link"
-                        href={proj.github}
-                        title="Github repo"
-                      >
-                        <Icon.GitHub className="navigation__container__icons" />
-                      </a>
-                    </div>
-                  ) : (
-                    <div className="showDescription__container__link">
-                      <span>Repository: </span> <Icon.X />
-                    </div>
-                  )}
-                  {proj.website ? (
-                    <div className="showDescription__container__link">
-                      <span>Website: </span>
-                      <a
-                        className="link"
-                        href={proj.website}
-                        title={proj.originalAlt}
-                      >
-                        <Icon.ExternalLink className="navigation__container__icons" />
-                      </a>
-                    </div>
-                  ) : null}
-                </div>
-              </div>
-            ))
-          : null}
-      </div>
-    );
-  };
-  useEffect(() => {
-    ShowDescripion();
-  });
   return (
     <div className="portfolio">
       <div className="portfolio__container">
@@ -85,11 +27,98 @@ const Portfolio = () => {
           />
         </div>
         <div className="portfolio__imageGallery__description">
-          <ShowDescripion />
+          <ShowDescripion currentIndex={currentIndex} />
         </div>
       </div>
     </div>
   );
 };
 
+const ShowDescripion = ({ currentIndex }) => {
+  console.log("showDesciption ran");
+  var project = projects.filter(project => {
+    return project.id === currentIndex ? project : null;
+  });
+  return (
+    <div className="showDescription">
+      {project
+        ? project.map((proj, index) => (
+            <div key={index} className="showDescription__container">
+              <h4>{proj.originalAlt}</h4>
+              <p>{proj.text}</p>
+              <Properties project={project} />
+              <div className="showDescription__container__links">
+                {proj.status ? (
+                  <div className="showDescription__container__link">
+                    <span>Status: </span>
+                    <span>
+                      {proj.status === "build" ? (
+                        <i
+                          className="fas fa-tools"
+                          title="Under construction"
+                        ></i>
+                      ) : (
+                        <i className="fas fa-check-circle" title="Done"></i>
+                      )}
+                    </span>
+                  </div>
+                ) : null}
+                {proj.github ? (
+                  <div className="showDescription__container__link">
+                    <span>Repository: </span>
+                    <a
+                      className="link"
+                      target="blank"
+                      href={proj.github}
+                      title="Github repo"
+                    >
+                      <i className="fab fa-github" title="Github"></i>
+                    </a>
+                  </div>
+                ) : (
+                  <div className="showDescription__container__link">
+                    <span>Repository: </span>
+                    <i className="fas fa-times" title="None"></i>
+                  </div>
+                )}
+                {proj.website ? (
+                  <div className="showDescription__container__link">
+                    <span>Website: </span>
+                    <a
+                      className="link"
+                      href={proj.website}
+                      title={proj.originalAlt}
+                      target="blank"
+                    >
+                      <i className="fas fa-external-link-alt"></i>
+                    </a>
+                  </div>
+                ) : (
+                  <div className="showDescription__container__link">
+                    <span>Website: </span>{" "}
+                    <i className="fas fa-times" title="None"></i>
+                  </div>
+                )}
+              </div>
+            </div>
+          ))
+        : null}
+    </div>
+  );
+};
+
+const Properties = project => {
+  console.log(project);
+  const p = { ...project };
+  console.log(p);
+  return (
+    <div>
+      {/* {project ? (
+        project.map((proj, index) => proj.properties)
+      ) : (
+        <span>då</span>
+      )} */}
+    </div>
+  );
+};
 export default Portfolio;

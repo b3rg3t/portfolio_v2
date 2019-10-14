@@ -41,16 +41,16 @@
   }
 }
 .nav {
-  background-color: rgba(255, 255, 255, 0.774);
+  // background-color: rgba(255, 255, 255, 0.774);
   z-index: 10;
   position: absolute;
   display: flex;
   width: 100%;
   margin-top: 60px;
   top: 0;
-  -webkit-box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);
+  // -webkit-box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);
+  // -moz-box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);
+  // box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);
   ul {
     list-style: none;
     display: flex;
@@ -81,6 +81,10 @@
   position: fixed;
   z-index: 11;
   margin-top: 0;
+  background-color: rgba(255, 255, 255, 0.774);
+  -webkit-box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);
 }
 
 /* Position and sizing of burger button */
@@ -138,7 +142,7 @@
     a {
       width: auto;
       cursor: pointer;
-      &:hover{
+      &:hover {
         color: $primary-color;
       }
     }

@@ -9,7 +9,7 @@ const Skills = () => {
       <div className="skills__container">
         <ul className="skills__ul">
           {logos.map((skill, index) => (
-            <li className="skills__li" key={skill.index}>
+            <li className="skills__li" key={skill.pic}>
               <img
                 onMouseOver={e => (e.currentTarget.src = skill.hoverPic)}
                 onMouseLeave={e => (e.currentTarget.src = skill.pic)}

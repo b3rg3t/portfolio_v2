@@ -69,9 +69,10 @@ const Navigation = () => {
                   spy={true}
                   smooth={true}
                 >
-                  <b>{link.label}</b>
+                  <b>{link.label}   </b>
                 </Link>
               </li>
+              
             ))}
           </ul>
         </div>

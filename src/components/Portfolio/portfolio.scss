@@ -30,16 +30,15 @@
     justify-content: center;
     padding-top: 10px;
     padding-left: 10px;
-    padding-right: 10px;  
+    padding-right: 10px;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
     -moz-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
     box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
-    .image-gallery-content{
+    .image-gallery-content {
       -webkit-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
       -moz-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
       box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
-      
     }
     .image-gallery-left-nav,
     .image-gallery-right-nav {
@@ -61,11 +60,11 @@
       margin-left: 10px;
       border-radius: 10px;
     }
-    .image-gallery-thumbnails{
+    .image-gallery-thumbnails {
       background-color: $primary-background;
-    //   -webkit-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
-    //   -moz-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
-    //   box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
+      //   -webkit-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
+      //   -moz-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
+      //   box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
     }
     .image-gallery-thumbnail.active {
       border: 3px solid $secondary-color;
@@ -83,12 +82,22 @@
       .showDescription__container {
         .showDescription__container__links {
           display: flex;
+          background-color: white;
           justify-content: flex-end;
           position: absolute;
           bottom: 30px;
           right: 0;
-          .showDescription__container__link{
-            margin-right: 40px;
+          width: 100%;
+          -webkit-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
+          -moz-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
+          box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
+          border-radius: 10px;
+          .showDescription__container__link {
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            text-align: center;
           }
         }
       }
@@ -97,11 +106,12 @@
 }
 @media screen and (max-width: 960px) {
   .portfolio__content__image {
-    width: 100%;
+    width: 100vw !important;
     min-width: 300px;
+    padding: 0 0 0 0 !important;
   }
   .portfolio__imageGallery {
-    width: 100% !important;
+    width: 100vw !important;
     padding: 0 0 0 0 !important;
   }
 }

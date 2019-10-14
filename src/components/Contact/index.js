@@ -46,6 +46,7 @@ const Contact = () => {
           value={name}
           onChange={e => setName(e.target.value)}
           placeholder="Name"
+          required
         />
         <br />
         <label style={{ display: "none" }}>Email:</label>
@@ -55,6 +56,7 @@ const Contact = () => {
           value={email}
           onChange={e => setEmail(e.target.value)}
           placeholder="Email"
+          required
         />
         <br />
         <label style={{ display: "none" }}>Message:</label>
@@ -65,12 +67,13 @@ const Contact = () => {
           value={message}
           onChange={e => setMessage(e.target.value)}
           placeholder="Write a message"
+          required
         />
         <input
           className="contact__form__button"
           type="submit"
           value="Submit"
-          disabled={isInvalid}
+          // disabled={isInvalid}
         />
         <br />
         {isInvalid ? (
