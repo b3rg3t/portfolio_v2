@@ -9,7 +9,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 html{
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 code {
@@ -54,9 +55,22 @@ $font-family-cursive:"Satisfy", cursive;
   text-shadow: 2px 2px 2px #444444;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Satisfy&display=swap");
+@keyframes fadeout {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
- 
-// .head {
-//   @include headlinebox($secondary-background);
-// }
+@keyframes fadein {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Satisfy&display=swap");

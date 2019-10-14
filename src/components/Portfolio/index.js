@@ -3,6 +3,7 @@ import "../Portfolio/portfolio.scss";
 import ImageGallery from "react-image-gallery";
 
 import { projects } from "./projects";
+// import { SkillsItem } from "../Skills/skills";
 
 const Portfolio = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -12,7 +13,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio">
       <div className="portfolio__container">
-        <h3 className="portfolio__container__head">Portfolio</h3>
+        <h2 className="portfolio__container__head">Portfolio</h2>
       </div>
       <div className="portfolio__imageGallery">
         <div className="portfolio__imageGallery__pictures">
@@ -46,7 +47,13 @@ const ShowDescripion = ({ currentIndex }) => {
             <div key={index} className="showDescription__container">
               <h4>{proj.originalAlt}</h4>
               <p>{proj.text}</p>
-              <Properties project={project} />
+              
+              <img
+                className=""
+                src={proj.react}
+                alt={proj.react}
+                width="50px"
+              />
               <div className="showDescription__container__links">
                 {proj.status ? (
                   <div className="showDescription__container__link">
@@ -107,18 +114,18 @@ const ShowDescripion = ({ currentIndex }) => {
   );
 };
 
-const Properties = project => {
-  console.log(project);
-  const p = { ...project };
-  console.log(p);
-  return (
-    <div>
-      {/* {project ? (
-        project.map((proj, index) => proj.properties)
-      ) : (
-        <span>då</span>
-      )} */}
-    </div>
-  );
-};
+// const Properties = project => {
+//   console.log(project);
+//   const p = { ...project };
+//   console.log(p);
+//   return (
+//     <div>
+//       {/* {project ? (
+//         project.map((proj, index) => proj.properties)
+//       ) : (
+//         <span>då</span>
+//       )} */}
+//     </div>
+//   );
+// };
 export default Portfolio;

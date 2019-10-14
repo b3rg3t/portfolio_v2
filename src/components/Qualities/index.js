@@ -13,7 +13,7 @@ const Qualities = () => (
               <Icon.Edit className="qualities__boxes__logo" />
             </p>
             <header>
-              <h4 className="qualities__boxes__head">Design</h4>
+              <h3 className="qualities__boxes__head">Design</h3>
             </header>
           </div>
           <p>
@@ -30,7 +30,7 @@ const Qualities = () => (
               <Icon.Code className="qualities__boxes__logo" />
             </p>
             <header>
-              <h4 className="qualities__boxes__head">Build</h4>
+              <h3 className="qualities__boxes__head">Build</h3>
             </header>
           </div>
           <p>I build projects from scratch using React, NextJS,  Vue and Vanilla JS</p>
@@ -44,7 +44,7 @@ const Qualities = () => (
               <Icon.Monitor className="qualities__boxes__logo" />
             </p>
             <header>
-              <h4 className="qualities__boxes__head">Learn</h4>
+              <h3 className="qualities__boxes__head">Learn</h3>
             </header>
           </div>
           <p>

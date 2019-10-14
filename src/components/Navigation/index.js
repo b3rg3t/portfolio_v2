@@ -38,16 +38,23 @@ const Navigation = () => {
             className="link"
             href="https://www.facebook.com/davidberg1990"
             title="Share"
+            target="blank"
           >
             <Icon.Share2 className="navigation__container__icons" />
           </a>
-          <a className="link" href="https://github.com/b3rg3t" title="Github">
+          <a
+            className="link"
+            target="blank"
+            href="https://github.com/b3rg3t"
+            title="Github"
+          >
             <Icon.GitHub className="navigation__container__icons" />
           </a>
           <a
             className="link"
             href="https://www.linkedin.com/in/david-berg-385530175"
             title="Linkedin"
+            target="blank"
           >
             <Icon.Linkedin
               xlinkTitle="linked in"
@@ -59,6 +66,7 @@ const Navigation = () => {
 
       <nav>
         <div className="nav" id={scroll > top ? "fixed-nav" : ""}>
+          <h1 className="fixed-nav__logo">David Berg</h1>
           <ul>
             {links.map(link => (
               <li key={link.to} className="navigation__container__link">
@@ -69,10 +77,9 @@ const Navigation = () => {
                   spy={true}
                   smooth={true}
                 >
-                  <b>{link.label}   </b>
+                  <b>{link.label} </b>
                 </Link>
               </li>
-              
             ))}
           </ul>
         </div>
@@ -118,16 +125,23 @@ const Hamburger = () => {
           className="link"
           href="https://www.facebook.com/davidberg1990"
           title="Share"
+          target="blank"
         >
           <Icon.Share2 className="navigation__container__icons" />
         </a>
-        <a className="link" href="https://github.com/b3rg3t" title="Github">
+        <a
+          className="link"
+          target="blank"
+          href="https://github.com/b3rg3t"
+          title="Github"
+        >
           <Icon.GitHub className="navigation__container__icons" />
         </a>
         <a
           className="link"
           href="https://www.linkedin.com/in/david-berg-385530175"
           title="Linkedin"
+          target="blank"
         >
           <Icon.Linkedin
             xlinkTitle="linked in"

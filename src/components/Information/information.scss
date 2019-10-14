@@ -2,13 +2,15 @@
 
 .information {
   width: 100%;
-  color: white;
-  height: 100%;
+  margin-top: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: -70px;
-  .information__content__title {
-    @include headlinebox($secondary-background);
+  .information__content {
+    width: 80%;
+    .information__content__title {
+      @include headlinebox($secondary-background);
+    }
   }
 }

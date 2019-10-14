@@ -19,10 +19,8 @@ const projects = [
     status: "build",
     text:
       "This a website for a swedish rockband that needs a new responsive website that works properly on mobile phones and tablets.",
-    properties: {
-      react : React,
-      firebase: Firebase,
-    }
+    react: React,
+    firebase: Firebase
   },
   {
     id: 1,
