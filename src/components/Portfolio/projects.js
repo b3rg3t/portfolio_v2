@@ -5,6 +5,7 @@ import KYH from "../../images/kyh.jpg";
 import Grex from "../../images/grex.jpg";
 import David from "../../images/davida.jpg";
 import Proud from "../../images/prouda.jpg";
+
 //properties
 import React from "../../images/REACT.png";
 import Firebase from "../../images/FIREBASE.png";
@@ -60,7 +61,7 @@ const projects = [
     thumbnail: Grex,
     originalAlt: "Grex",
     thumbnailTitle: "Project XY",
-    github: "https://github.com/b3rg3t/grex_candy",
+    github: "https://github.com/glindberg/grex_candy",
     status: "done",
     text:
       "Grex was our first group project with React. Grex is supposed to be a training app to find like minded people that want to find training partners."

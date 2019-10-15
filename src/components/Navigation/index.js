@@ -23,6 +23,12 @@ const Navigation = () => {
 
   return (
     <div>
+      <div className="menu-wrap">
+        <Link to="home">
+          <h1 className="menu-wrap__header">David Berg</h1>
+          <span className="menu-wrap__text">Front-end Developer</span>
+        </Link>
+      </div>
       <Hamburger />
       <header className="header">
         <div className="navigation__header">
@@ -66,7 +72,9 @@ const Navigation = () => {
 
       <nav>
         <div className="nav" id={scroll > top ? "fixed-nav" : ""}>
-          <h1 className="fixed-nav__logo">David Berg</h1>
+          <Link to="home">
+            <h1 className="fixed-nav__logo">David Berg</h1>
+          </Link>
           <ul>
             {links.map(link => (
               <li key={link.to} className="navigation__container__link">
@@ -150,6 +158,7 @@ const Hamburger = () => {
         </a>
       </div>
     </Menu>
+    // </div>
   );
 };
 

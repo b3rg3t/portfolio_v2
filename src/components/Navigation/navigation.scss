@@ -61,7 +61,7 @@
     li {
       padding: 10px;
       list-style: none;
-      margin: 0 40px;
+      margin: 0 30px;
       a {
         cursor: pointer;
         flex: 1;
@@ -69,7 +69,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
         color: $third-text-color;
         &:hover {
           color: $secondary-color;
@@ -82,6 +81,7 @@
   margin: 0;
   padding: 0;
   display: none;
+  cursor: pointer;
 }
 #fixed-nav {
   position: fixed;
@@ -116,12 +116,14 @@
   right: 20px;
   top: 20px;
   display: none;
+
   .bm-burger-bars {
     background: #222222;
     border-radius: 10px;
   }
   .bm-burger-bars-hover {
-    background: rgb(243, 3, 3);
+    background: $secondary-color;
+    opacity: 1 !important;
   }
 }
 /* Position and sizing of clickable cross button */
@@ -134,7 +136,11 @@
 .bm-cross {
   background: $secondary-color;
 }
-
+.hamburger__header{
+  font-family: $font-family-cursive;
+  width: 100%;
+  text-align: center;
+}
 /* General sidebar styles */
 .bm-menu {
   background: #373a47;
@@ -144,7 +150,6 @@
   align-items: center;
   .bm-item-list {
     color: white;
-    height: 50% !important;
   }
   .bm-item {
     display: inline-block;
@@ -154,7 +159,7 @@
     }
     .hamburger__ul {
       list-style: none;
-      margin: 0;
+      margin: 100px 0;
       padding: 0;
       display: flex;
       justify-content: center;
@@ -169,6 +174,32 @@
     }
   }
 }
+.menu-wrap{
+  display: none;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  height: 65px;
+  z-index: 100;
+  -webkit-box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);
+  .menu-wrap__header{
+    font-family: $font-family-cursive;
+    margin: 10px 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .menu-wrap__text{
+    font-family: $font-family-cursive;
+    font-size: 11px;
+    margin-left: 50px;
+    position: absolute;
+    margin-top: -10px;
+    cursor: pointer;
+  }
+}
 .hamburger__links {
   justify-content: flex-end;
   margin-top: 100px;
@@ -181,10 +212,11 @@
   }
 }
 /* Styling of overlay */
-// .bm-overlay {
-//   background: rgba(0, 0, 0, 0.3);
-//   display: none;
-// }
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  top: 0;
+}
 
 @media screen and (max-width: 960px) {
   .header,
@@ -200,6 +232,9 @@
     flex-direction: column;
   }
   .bm-menu-wrap {
+    display: block;
+  }
+  .menu-wrap{
     display: block;
   }
 }

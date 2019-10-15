@@ -33,8 +33,17 @@ const Contact = () => {
     });
     event.preventDefault();
   };
+  
+//   useEffect(() => {
+//  console.log("contact form changed")
+//     console.log(name.length)
+//     if(name.length >= 1){
+//       console.log("true")
+//       return true
+//     }
+//   }, [name, email, message])
 
-  const isInvalid = name === "" || email === "" || message === "";
+  // const isInvalid = name === "" || email === "" || message === "";
   return (
     <div className="contact">
       <form className="contact__form" onSubmit={handleSubmit}>
@@ -76,11 +85,11 @@ const Contact = () => {
           // disabled={isInvalid}
         />
         <br />
-        {isInvalid ? (
+        {/* {!isInvalid ? (
           <span>*You have to fill in all fields to submit.</span>
         ) : (
           <br />
-        )}
+        )} */}
       </form>
     </div>
   );

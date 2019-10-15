@@ -20,13 +20,14 @@ code {
 
 //Colors website
 $primary-color: #525dce;
-$secondary-color: rgb(61, 125, 228);
+$secondary-color: rgb(122, 228, 61);
+$third-color: rgb(183, 207, 241);
 
 $primary-background: rgb(230, 230, 230);
-$secondary-background: #666;
-$third-background: rgb(126, 125, 125);
+$secondary-background: rgba(182, 182, 182, 0.342);
+$third-background: rgba(255, 255, 255, 0.658);
 
-$primary-text-color: rgb(26, 25, 25);
+$primary-text-color: rgb(46, 46, 46);
 $secondary-text-color: white;
 $third-text-color: rgb(88, 87, 87);
 
@@ -38,8 +39,10 @@ $skew-negative-box: (skew( 3deg, 0deg));
 //Horizontal
 $skew-negative-h: (skew(-3deg, 0deg));
 
+//Fonts
 $font-family-cursive:"Satisfy", cursive;
 
+//Mixins
 @mixin headlinebox($secondary-background) {
   align-items: center;
   font-family: $font-family-cursive;
@@ -55,6 +58,7 @@ $font-family-cursive:"Satisfy", cursive;
   text-shadow: 2px 2px 2px #444444;
 }
 
+//Keyframes
 @keyframes fadeout {
   0% {
     opacity: 0.4;
