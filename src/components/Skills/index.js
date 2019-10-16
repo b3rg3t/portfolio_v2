@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./skills.scss";
 import { SkillsItem } from "./skills";
+import LazyLoad from "react-lazyload";
 
 const Skills = () => {
   const [logos] = useState(SkillsItem);
@@ -10,6 +11,7 @@ const Skills = () => {
         <ul className="skills__ul">
           {logos.map((skill, index) => (
             <li className="skills__li" key={skill.pic}>
+            <LazyLoad height={100} once>
               <img
                 onMouseOver={e => (e.currentTarget.src = skill.hoverPic)}
                 onMouseLeave={e => (e.currentTarget.src = skill.pic)}
@@ -19,6 +21,7 @@ const Skills = () => {
                 title={skill.title}
                 width="50px"
               />
+              </LazyLoad>
             </li>
           ))}
         </ul>

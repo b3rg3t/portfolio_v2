@@ -1,18 +1,18 @@
-import ProjectXY from "../../images/projectXY.jpg";
-import Quire from "../../images/quire.jpg";
-import DavidBerg from "../../images/davidAnders.jpg";
-import KYH from "../../images/kyh.jpg";
-import Grex from "../../images/grex.jpg";
-import David from "../../images/davida.jpg";
-import Proud from "../../images/prouda.jpg";
+import ProjectXY from "../../images/projectXY.webp";
+import Quire from "../../images/quire.webp";
+import DavidBerg from "../../images/davidAnders.webp";
+import KYH from "../../images/kyh.webp";
+import Grex from "../../images/grex.webp";
+import David from "../../images/davida.webp";
+import Proud from "../../images/prouda.webp";
 //Thumbnail photos
-import ProjectXYSmall from "../../images/projectXYSmall.jpg";
-import QuireSmall from "../../images/quireSmall.jpg";
-import DavidBergSmall from "../../images/davidAndersSmall.jpg";
-import KYHSmall from "../../images/kyhSmall.jpg";
-import GrexSmall from "../../images/grexSmall.jpg";
-import DavidSmall from "../../images/davidaSmall.jpg";
-import ProudSmall from "../../images/proudaSmall.jpg";
+import ProjectXYSmall from "../../images/projectXYSmall.webp";
+import QuireSmall from "../../images/quireSmall.webp";
+import DavidBergSmall from "../../images/davidAndersSmall.webp";
+import KYHSmall from "../../images/kyhSmall.webp";
+import GrexSmall from "../../images/grexSmall.webp";
+import DavidSmall from "../../images/davidaSmall.webp";
+import ProudSmall from "../../images/proudaSmall.webp";
 
 //properties
 import React from "../../images/REACT.png";

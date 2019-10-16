@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../Portfolio/portfolio.scss";
 import ImageGallery from "react-image-gallery";
-
+// import LazyLoad from "react-lazyload";
 import { projects } from "./projects";
 // import { SkillsItem } from "../Skills/skills";
 
@@ -17,16 +17,15 @@ const Portfolio = () => {
       </div>
       <div className="portfolio__imageGallery">
         <div className="portfolio__imageGallery__pictures">
-          <ImageGallery
-            items={projects}
-            // thumbnailPosition={"right"}
-            lazyLoad={true}
-            showPlayButton={false}
-            showFullscreenButton={false}
-            onSlide={index => SetState(index)}
-            onThumbnailClick={(e, index) => SetState(index)}
-          />
+            <ImageGallery
+              items={projects}
+              showPlayButton={false}
+              showFullscreenButton={false}
+              onSlide={index => SetState(index)}
+              onThumbnailClick={(e, index) => SetState(index)}
+            />
         </div>
+
         <div className="portfolio__imageGallery__description">
           <ShowDescripion currentIndex={currentIndex} />
         </div>
@@ -47,7 +46,7 @@ const ShowDescripion = ({ currentIndex }) => {
             <div key={index} className="showDescription__container">
               <h4>{proj.originalAlt}</h4>
               <p>{proj.text}</p>
-              
+
               <img
                 className=""
                 src={proj.react}

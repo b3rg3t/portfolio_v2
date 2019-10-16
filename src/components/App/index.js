@@ -18,9 +18,8 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <LazyLoad height={"100vh"}>
-          <Navigation />
-        </LazyLoad>
+        <Navigation />
+
         <div className="app__main">
           <div className="app__main__content">
             <main className="main">
@@ -44,11 +43,11 @@ class App extends Component {
                   <Information />
                 </section>
               </LazyLoad>
-              <LazyLoad height={200} offset={100}>
-                <section className="main__three">
-                  <Portfolio />
-                </section>
-              </LazyLoad>
+
+              <section className="main__three">
+                <Portfolio />
+              </section>
+
               <LazyLoad height={200} offset={100}>
                 <section className="main__fourth">
                   <Contact />

@@ -14,7 +14,7 @@ const Information = () => {
         </p>
         <div>
           <input
-          autoFocus
+          // autoFocus
             type="button"
             className="information__content__button"
             onClick={() => setYear("First")}

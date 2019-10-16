@@ -7,7 +7,9 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const handleSubmit = event => {
     const request = JSON.stringify({
-      name: name, email: email, message: message
+      name: name,
+      email: email,
+      message: message
     });
     console.log(request);
     fetch("https://www.usebasin.com/f/c177f0920b56.json", {
@@ -19,37 +21,39 @@ const Contact = () => {
     }).then(response => {
       if (response.ok) {
         console.log(!"response ok");
-        alert("Your message was submitted successfully, David will be in contact with you soon.")
-        setName("")
-        setEmail("")
-        setMessage("")
+        alert(
+          "Your message was submitted successfully, David will be in contact with you soon."
+        );
+        setName("");
+        setEmail("");
+        setMessage("");
         event.preventDefault();
-      }
-      else{
-        console.log("error!")
-        alert("Something went wrong, try again later")
+      } else {
+        console.log("error!");
+        alert("Something went wrong, try again later");
         event.preventDefault();
       }
     });
     event.preventDefault();
   };
-  
-//   useEffect(() => {
-//  console.log("contact form changed")
-//     console.log(name.length)
-//     if(name.length >= 1){
-//       console.log("true")
-//       return true
-//     }
-//   }, [name, email, message])
+
+  //   useEffect(() => {
+  //  console.log("contact form changed")
+  //     console.log(name.length)
+  //     if(name.length >= 1){
+  //       console.log("true")
+  //       return true
+  //     }
+  //   }, [name, email, message])
 
   // const isInvalid = name === "" || email === "" || message === "";
   return (
     <div className="contact">
       <form className="contact__form" onSubmit={handleSubmit}>
         <h2 className="contact__head">Contact</h2>
-        <label style={{ display: "none" }}>Name:</label>
+        {/* <label style={{ display: "none" }}>Name:</label> */}
         <input
+          aria-label="name"
           className="contact__form__input"
           name="name"
           value={name}
@@ -58,8 +62,9 @@ const Contact = () => {
           required
         />
         <br />
-        <label style={{ display: "none" }}>Email:</label>
+        {/* <label style={{ display: "none" }}>Email:</label> */}
         <input
+          aria-label="email"
           className="contact__form__input"
           name="email"
           value={email}
@@ -68,8 +73,9 @@ const Contact = () => {
           required
         />
         <br />
-        <label style={{ display: "none" }}>Message:</label>
+        {/* <label style={{ display: "none" }}>Message:</label> */}
         <textarea
+          aria-label="message"
           name="message"
           rows="4"
           cols="50"
