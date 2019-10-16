@@ -10,43 +10,55 @@ import Skills from "../Skills";
 import Contact from "../Contact";
 import Information from "../Information";
 import Header from "../Hero";
-// import Location from "../Location";
+
+//Lazyload
+import LazyLoad from "react-lazyload";
 
 class App extends Component {
   render() {
     return (
       <div className="app">
-        <Navigation />
+        <LazyLoad height={"100vh"}>
+          <Navigation />
+        </LazyLoad>
         <div className="app__main">
           <div className="app__main__content">
             <main className="main">
-              <div id="home" className="main__header">
-                <Header />
-              </div>
-
-              <section className="main__top">
-                <Qualities />
-              </section>
-
-              <section className="main__first">
-                <Skills />
-              </section>
-
-              <section className="main__two">
-                <Information />
-              </section>
-
-              <section className="main__three">
-                <Portfolio />
-              </section>
-
-              <section className="main__fourth">
-                <Contact />
-              </section>
-
+              <LazyLoad height={"100vh"}>
+                <div id="home" className="main__header">
+                  <Header />
+                </div>
+              </LazyLoad>
+              <LazyLoad height={200} offset={100}>
+                <section className="main__top">
+                  <Qualities />
+                </section>
+              </LazyLoad>
+              <LazyLoad height={200} offset={100}>
+                <section className="main__first">
+                  <Skills />
+                </section>
+              </LazyLoad>
+              <LazyLoad height={200} offset={100}>
+                <section className="main__two">
+                  <Information />
+                </section>
+              </LazyLoad>
+              <LazyLoad height={200} offset={100}>
+                <section className="main__three">
+                  <Portfolio />
+                </section>
+              </LazyLoad>
+              <LazyLoad height={200} offset={100}>
+                <section className="main__fourth">
+                  <Contact />
+                </section>
+              </LazyLoad>
             </main>
           </div>
-          <Footer />
+          <LazyLoad height={200} offset={100}>
+            <Footer />
+          </LazyLoad>
         </div>
       </div>
     );

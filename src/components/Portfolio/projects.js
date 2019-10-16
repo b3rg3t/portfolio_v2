@@ -5,6 +5,14 @@ import KYH from "../../images/kyh.jpg";
 import Grex from "../../images/grex.jpg";
 import David from "../../images/davida.jpg";
 import Proud from "../../images/prouda.jpg";
+//Thumbnail photos
+import ProjectXYSmall from "../../images/projectXYSmall.jpg";
+import QuireSmall from "../../images/quireSmall.jpg";
+import DavidBergSmall from "../../images/davidAndersSmall.jpg";
+import KYHSmall from "../../images/kyhSmall.jpg";
+import GrexSmall from "../../images/grexSmall.jpg";
+import DavidSmall from "../../images/davidaSmall.jpg";
+import ProudSmall from "../../images/proudaSmall.jpg";
 
 //properties
 import React from "../../images/REACT.png";
@@ -14,9 +22,10 @@ const projects = [
   {
     id: 0,
     original: ProjectXY,
-    thumbnail: ProjectXY,
+    thumbnail: ProjectXYSmall,
     originalAlt: "Project XY",
     thumbnailTitle: "Project XY",
+    thumbnailAlt: "Project XY",
     status: "build",
     text:
       "This a website for a swedish rockband that needs a new responsive website that works properly on mobile phones and tablets.",
@@ -26,9 +35,10 @@ const projects = [
   {
     id: 1,
     original: Quire,
-    thumbnail: Quire,
+    thumbnail: QuireSmall,
     originalAlt: "Quire notepad",
     originalTitle: "Quire notepad",
+    thumbnailAlt: "Quire",
     github: "https://github.com/b3rg3t/leo_quire",
     status: "done",
     text:
@@ -37,9 +47,10 @@ const projects = [
   {
     id: 2,
     original: DavidBerg,
-    thumbnail: DavidBerg,
-    originalAlt: "David Anders",
-    originalTitle: "David Anders",
+    thumbnail: DavidBergSmall,
+    originalAlt: "David Anders Berg",
+    originalTitle: "David Anders Berg",
+    thumbnailAlt: "David Anders Berg",
     github: "https://github.com/b3rg3t/Portfolio",
     status: "done",
     website: "http://davidanders.se/other/",
@@ -49,18 +60,20 @@ const projects = [
   {
     id: 3,
     original: KYH,
-    thumbnail: KYH,
+    thumbnail: KYHSmall,
     originalAlt: "KYH",
     originalTitle: "KYH",
+    thumbnailAlt: "KYH",
     status: "done",
     text: "KYH was our first task in school to make a landing page."
   },
   {
     id: 4,
     original: Grex,
-    thumbnail: Grex,
+    thumbnail: GrexSmall,
     originalAlt: "Grex",
-    thumbnailTitle: "Project XY",
+    thumbnailTitle: "Grex",
+    thumbnailAlt: "Grex",
     github: "https://github.com/glindberg/grex_candy",
     status: "done",
     text:
@@ -69,9 +82,10 @@ const projects = [
   {
     id: 5,
     original: David,
-    thumbnail: David,
+    thumbnail: DavidSmall,
     originalAlt: "David Berg",
-    thumbnailTitle: "Project XY",
+    thumbnailTitle: "David Berg",
+    thumbnailAlt: "David Berg",
     github: "https://github.com/b3rg3t/grex_candy",
     status: "done",
     website: "http://davidanders.se/#/",
@@ -81,9 +95,10 @@ const projects = [
   {
     id: 6,
     original: Proud,
-    thumbnail: Proud,
+    thumbnail: ProudSmall,
     originalAlt: "Proud",
-    thumbnailTitle: "Project XY",
+    thumbnailTitle: "Proud",
+    thumbnailAlt: "Proud",
     status: "build",
     github: "https://github.com/b3rg3t/vendre_proud",
     text:

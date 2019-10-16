@@ -34,10 +34,7 @@
       }
     }
     .contact__form__button {
-      border-radius: 10px;
-      padding: 10px;
-      font-weight: bold;
-      cursor: pointer;
+      @include buttons($secondary-color)
     }
   }
   textarea {
