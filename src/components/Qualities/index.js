@@ -1,6 +1,6 @@
 import React from "react";
 import "./qualities.scss";
-import * as Icon from "react-feather";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Qualities = () => (
   <div className="qualities">
     <h2 className="qualities__head">Qualities</h2>
@@ -10,15 +10,37 @@ const Qualities = () => (
         <div className="qualities__boxes__content">
           <div>
             <p>
-              <Icon.Edit className="qualities__boxes__logo" />
+              <FontAwesomeIcon
+                className="qualities__boxes__logo"
+                icon={["fas", "pencil-alt"]}
+              />
             </p>
             <header>
               <h3 className="qualities__boxes__head">Design</h3>
             </header>
           </div>
           <p>
-            I have a great passion for web design where I start by building
-            prototypes in Adobe XD
+            I have a great passion for web design where I focus on UX/UI-design. 
+          </p>
+        </div>
+      </article>
+
+      <article id="content" className="qualities__boxes">
+        <div className="qualities__boxes__content">
+          <div>
+            <p>
+            <FontAwesomeIcon
+                className="qualities__boxes__logo"
+                icon={["fas", "code"]}
+              />
+            </p>
+            <header>
+              <h3 className="qualities__boxes__head">Build</h3>
+            </header>
+          </div>
+          <p>
+            I build projects from scratch using React, NextJS, Vue and Vanilla
+            JS
           </p>
         </div>
       </article>
@@ -26,23 +48,10 @@ const Qualities = () => (
       <article className="qualities__boxes">
         <div className="qualities__boxes__content">
           <div>
-            <p>
-              <Icon.Code className="qualities__boxes__logo" />
-            </p>
-            <header>
-              <h3 className="qualities__boxes__head">Build</h3>
-            </header>
-          </div>
-          <p>I build projects from scratch using React, NextJS,  Vue and Vanilla JS</p>
-        </div>
-      </article>
-
-      <article className="qualities__boxes">
-        <div className="qualities__boxes__content">
-          <div>
-            <p>
-              <Icon.Monitor className="qualities__boxes__logo" />
-            </p>
+            <p><FontAwesomeIcon
+                className="qualities__boxes__logo"
+                icon={["fas", "laptop-code"]}
+              /></p>
             <header>
               <h3 className="qualities__boxes__head">Learn</h3>
             </header>

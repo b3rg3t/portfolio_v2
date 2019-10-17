@@ -99,7 +99,7 @@ const projects = [
     originalAlt: "Proud",
     thumbnailTitle: "Proud",
     thumbnailAlt: "Proud",
-    status: "build",
+    status: "done",
     github: "https://github.com/b3rg3t/vendre_proud",
     text:
       "Proud is a webb application to Slack that collects messages from your slack workspace channel where you want to praise a co-worker. You can send messages from Proud into a specific channel on Slack. Join different groups."

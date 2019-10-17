@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../Navigation/navigation.scss";
-import * as Icon from "react-feather";
+
 import { Link } from "react-scroll";
 import { slide as Menu } from "react-burger-menu";
 import { links } from "./links";
@@ -19,7 +19,7 @@ const Navigation = () => {
     setTop(el.offsetTop);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [top]);
 
   return (
     <div>
@@ -46,7 +46,7 @@ const Navigation = () => {
             title="Share"
             target="blank"
           >
-            <Icon.Share2 className="navigation__container__icons" />
+            {/* <Icon.Share2 className="navigation__container__icons" /> */}
           </a>
           <a
             className="link"
@@ -54,7 +54,7 @@ const Navigation = () => {
             href="https://github.com/b3rg3t"
             title="Github"
           >
-            <Icon.GitHub className="navigation__container__icons" />
+            {/* <Icon.GitHub className="navigation__container__icons" /> */}
           </a>
           <a
             className="link"
@@ -62,10 +62,10 @@ const Navigation = () => {
             title="Linkedin"
             target="blank"
           >
-            <Icon.Linkedin
+            {/* <Icon.Linkedin
               xlinkTitle="linked in"
               className="navigation__container__icons"
-            />
+            /> */}
           </a>
         </div>
       </header>
@@ -135,7 +135,7 @@ const Hamburger = () => {
           title="Share"
           target="blank"
         >
-          <Icon.Share2 className="navigation__container__icons" />
+          {/* <Icon.Share2 className="navigation__container__icons" /> */}
         </a>
         <a
           className="link"
@@ -143,7 +143,7 @@ const Hamburger = () => {
           href="https://github.com/b3rg3t"
           title="Github"
         >
-          <Icon.GitHub className="navigation__container__icons" />
+          {/* <Icon.GitHub className="navigation__container__icons" /> */}
         </a>
         <a
           className="link"
@@ -151,10 +151,10 @@ const Hamburger = () => {
           title="Linkedin"
           target="blank"
         >
-          <Icon.Linkedin
+          {/* <Icon.Linkedin
             xlinkTitle="linked in"
             className="navigation__container__icons"
-          />
+          /> */}
         </a>
       </div>
     </Menu>

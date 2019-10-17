@@ -14,6 +14,9 @@ import Header from "../Hero";
 //Lazyload
 import LazyLoad from "react-lazyload";
 
+//FontAwesome 
+import '../fontawesome';
+
 class App extends Component {
   render() {
     return (

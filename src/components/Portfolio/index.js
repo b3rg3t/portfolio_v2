@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import "../Portfolio/portfolio.scss";
 import ImageGallery from "react-image-gallery";
-// import LazyLoad from "react-lazyload";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { projects } from "./projects";
-// import { SkillsItem } from "../Skills/skills";
 
 const Portfolio = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -56,53 +55,50 @@ const ShowDescripion = ({ currentIndex }) => {
               <div className="showDescription__container__links">
                 {proj.status ? (
                   <div className="showDescription__container__link">
-                    <span>Status: </span>
+                    <p className="showDescription__container__description">Status: </p>
                     <span>
                       {proj.status === "build" ? (
-                        <i
-                          className="fas fa-tools"
-                          title="Under construction"
-                        ></i>
+                        <FontAwesomeIcon className="icons tools" icon={["fas", "tools"]} />
                       ) : (
-                        <i className="fas fa-check-circle" title="Done"></i>
+                        <FontAwesomeIcon className="icons check-square" icon="check-square" />
                       )}
                     </span>
                   </div>
                 ) : null}
                 {proj.github ? (
                   <div className="showDescription__container__link">
-                    <span>Repository: </span>
+                    <p className="showDescription__container__description">Repository: </p>
                     <a
                       className="link"
                       target="blank"
                       href={proj.github}
                       title="Github repo"
                     >
-                      <i className="fab fa-github" title="Github"></i>
+                      <FontAwesomeIcon className="icons" icon={["fab", "github"]} />
                     </a>
                   </div>
                 ) : (
                   <div className="showDescription__container__link">
-                    <span>Repository: </span>
-                    <i className="fas fa-times" title="None"></i>
+                    <p className="showDescription__container__description">Repository: </p>
+                    <span><FontAwesomeIcon className="icons" icon={["fas", "times"]} /></span>
                   </div>
                 )}
                 {proj.website ? (
                   <div className="showDescription__container__link">
-                    <span>Website: </span>
+                    <p className="showDescription__container__description">Website: </p>
                     <a
                       className="link"
                       href={proj.website}
                       title={proj.originalAlt}
                       target="blank"
                     >
-                      <i className="fas fa-external-link-alt"></i>
+                      <FontAwesomeIcon className="icons" icon={["fas", "external-link-alt"]} />
                     </a>
                   </div>
                 ) : (
                   <div className="showDescription__container__link">
-                    <span>Website: </span>{" "}
-                    <i className="fas fa-times" title="None"></i>
+                    <p className="showDescription__container__description">Website: </p>
+                    <span><FontAwesomeIcon className="icons" icon={["fas", "times"]} /></span>
                   </div>
                 )}
               </div>

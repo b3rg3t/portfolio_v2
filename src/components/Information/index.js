@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./information.scss";
+import study from "../../images/study.webp";
 
 const Information = () => {
   const [year, setYear] = useState("First");
@@ -7,26 +8,37 @@ const Information = () => {
     <div className="information">
       <div className="information__content">
         <h2 className="information__content__title">About me</h2>
-        <p>
-          At the moment I'm going to a Front-end Developer program at KYH,
-          Stockholm. It's a 2 year program including 20 weeks internship at some
-          company.
-        </p>
-        <div>
-          <input
-          // autoFocus
-            type="button"
-            className="information__content__button"
-            onClick={() => setYear("First")}
-            value="Year 1"
-          />
-          <input
-            type="button"
-            className="information__content__button"
-            onClick={() => setYear("Second")}
-            value="Year 2"
-          />
-          {year === "First" ? <YearOne /> : <YearTwo />}
+        <div className="information__content__info">
+          <p>
+            At the moment I'm going to a Front-end Developer program at KYH,
+            Stockholm. It's a 2 year program including 20 weeks internship.
+          </p>
+          <div className="information__content__info__boxes">
+            <div className="information__content__info__boxes__left">
+              <div className="plupp">
+                <input
+                  type="button"
+                  className="information__content__button"
+                  onClick={() => setYear("First")}
+                  value="Year 1"
+                />
+                <input
+                  type="button"
+                  className="information__content__button"
+                  onClick={() => setYear("Second")}
+                  value="Year 2"
+                />
+              </div>
+              {year === "First" ? <YearOne /> : <YearTwo />}
+            </div>
+            <div className="information__content__info__boxes__right">
+              <img
+                className="information__content__info__boxes__box__image"
+                src={study}
+                alt="study react"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -36,7 +48,7 @@ const Information = () => {
 const YearOne = () => {
   return (
     <div className="year">
-      <h3 className="yearOne year__header">Year One</h3>
+      <h3 className="year__header">Year One</h3>
       <div className="year__content">
         <ul className="year__content__ul">
           <li>Arbetsmetodik för utvecklare, 20 yhp</li>

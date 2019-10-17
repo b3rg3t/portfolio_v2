@@ -4,7 +4,7 @@ import LazyLoad from "react-lazyload";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero" id="content">
       <div className="hero__content">
         <LazyLoad height={200}>
           <img
