@@ -55,7 +55,7 @@ const projects = [
     status: "done",
     website: "http://davidanders.se/other/",
     text:
-      "This is my first bigger project I made in school and it is my first porfolio website. It is written in HTML, CSS and JavaScript. I did put a lot effort trying to make it responsive. It is a single page site."
+      "This is my first bigger project I made in school and it is a porfolio website. It is written in HTML, CSS and JavaScript. I did put a lot effort trying to make it responsive. It is a single page site."
   },
   {
     id: 3,

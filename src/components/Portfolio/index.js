@@ -58,9 +58,9 @@ const ShowDescripion = ({ currentIndex }) => {
                     <p className="showDescription__container__description">Status: </p>
                     <span>
                       {proj.status === "build" ? (
-                        <FontAwesomeIcon className="icons tools" icon={["fas", "tools"]} />
+                        <FontAwesomeIcon className="icons tools" title="Under construction" icon={["fas", "tools"]} />
                       ) : (
-                        <FontAwesomeIcon className="icons check-square" icon="check-square" />
+                        <FontAwesomeIcon className="icons check-square" title="Project done" icon="check-square" />
                       )}
                     </span>
                   </div>
@@ -80,7 +80,7 @@ const ShowDescripion = ({ currentIndex }) => {
                 ) : (
                   <div className="showDescription__container__link">
                     <p className="showDescription__container__description">Repository: </p>
-                    <span><FontAwesomeIcon className="icons" icon={["fas", "times"]} /></span>
+                    <span><FontAwesomeIcon className="icons" title="None" icon={["fas", "times"]} /></span>
                   </div>
                 )}
                 {proj.website ? (
@@ -92,13 +92,13 @@ const ShowDescripion = ({ currentIndex }) => {
                       title={proj.originalAlt}
                       target="blank"
                     >
-                      <FontAwesomeIcon className="icons" icon={["fas", "external-link-alt"]} />
+                      <FontAwesomeIcon className="icons" title="External link" icon={["fas", "external-link-alt"]} />
                     </a>
                   </div>
                 ) : (
                   <div className="showDescription__container__link">
                     <p className="showDescription__container__description">Website: </p>
-                    <span><FontAwesomeIcon className="icons" icon={["fas", "times"]} /></span>
+                    <span><FontAwesomeIcon className="icons" title="None" icon={["fas", "times"]} /></span>
                   </div>
                 )}
               </div>

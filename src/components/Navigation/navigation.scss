@@ -5,7 +5,7 @@
   display: flex;
   width: 100%;
   position: absolute;
-  font-family: "Satisfy", cursive;
+  font-family: "Monospace";
   background-color: $secondary-color;
   .navigation__header {
     flex: 1;
@@ -14,12 +14,12 @@
     justify-content: center;
     .navigation__header__logo {
       margin: 0;
-      text-shadow: 2px 2px 2px #444444;
+      // text-shadow: 2px 2px 2px #444444;
     }
   }
   .navigation__center {
     flex: 1;
-    text-shadow: 2px 2px 2px #444444;
+    // text-shadow: 2px 2px 2px #444444;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,9 +102,9 @@
     color: white;
     height: 35px;
     padding: 0 10px;
-    text-shadow: 2px 2px 2px #444444;
+    // text-shadow: 2px 2px 2px #444444;
     border-radius: 10px;
-    font-family: "Satisfy", cursive;
+    font-family: "Monospace";
     animation: fadein 1.5s;
     &:hover{
       color: $primary-color;
