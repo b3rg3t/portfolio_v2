@@ -33,7 +33,7 @@
     .link {
       margin: 0 30px;
       color: white;
-      text-shadow: 2px 2px 2px #444444;
+      font-size: 25px;
       &:hover {
         color: $primary-color;
       }
@@ -82,6 +82,7 @@
   padding: 0;
   display: none;
   cursor: pointer;
+
 }
 #fixed-nav {
   position: fixed;
@@ -105,6 +106,9 @@
     border-radius: 10px;
     font-family: "Satisfy", cursive;
     animation: fadein 1.5s;
+    &:hover{
+      color: $primary-color;
+    }
   }
 }
 

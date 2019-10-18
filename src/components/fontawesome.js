@@ -1,6 +1,6 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
 //fab
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 //fas
 import {
   faPencilAlt,
@@ -9,10 +9,11 @@ import {
   faLaptopCode,
   faCheckSquare,
   faTimes,
-  faExternalLinkAlt
+  faExternalLinkAlt,
+  faShareAltSquare
 } from "@fortawesome/free-solid-svg-icons";
 //far
-// import { far } from '@fortawesome/free-regular-svg-icons'
+import { faPaperPlane } from '@fortawesome/free-regular-svg-icons'
 library.add(
   faGithub,
   faPencilAlt,
@@ -21,5 +22,8 @@ library.add(
   faLaptopCode,
   faCheckSquare,
   faTimes,
-  faExternalLinkAlt
+  faExternalLinkAlt,
+  faLinkedin,
+  faShareAltSquare,
+  faPaperPlane
 );

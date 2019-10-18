@@ -4,10 +4,11 @@ import "../Navigation/navigation.scss";
 import { Link } from "react-scroll";
 import { slide as Menu } from "react-burger-menu";
 import { links } from "./links";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navigation = () => {
   const [scroll, setScroll] = useState(0);
-  const [top, setTop] = useState(0);
+  const [top, setTop] = useState(60);
 
   const handleScroll = () => {
     setScroll(window.scrollY);
@@ -42,19 +43,14 @@ const Navigation = () => {
         <div className="navigation__container">
           <a
             className="link"
-            href="https://www.facebook.com/davidberg1990"
-            title="Share"
-            target="blank"
-          >
-            {/* <Icon.Share2 className="navigation__container__icons" /> */}
-          </a>
-          <a
-            className="link"
             target="blank"
             href="https://github.com/b3rg3t"
             title="Github"
           >
-            {/* <Icon.GitHub className="navigation__container__icons" /> */}
+            <FontAwesomeIcon
+              className="navigation__container__icons"
+              icon={["fab", "github"]}
+            />
           </a>
           <a
             className="link"
@@ -62,10 +58,10 @@ const Navigation = () => {
             title="Linkedin"
             target="blank"
           >
-            {/* <Icon.Linkedin
-              xlinkTitle="linked in"
+            <FontAwesomeIcon
               className="navigation__container__icons"
-            /> */}
+              icon={["fab", "linkedin"]}
+            />
           </a>
         </div>
       </header>
@@ -135,7 +131,10 @@ const Hamburger = () => {
           title="Share"
           target="blank"
         >
-          {/* <Icon.Share2 className="navigation__container__icons" /> */}
+          <FontAwesomeIcon
+            className="navigation__container__icons"
+            icon={["fas", "share-alt-square"]}
+          />
         </a>
         <a
           className="link"
@@ -143,7 +142,10 @@ const Hamburger = () => {
           href="https://github.com/b3rg3t"
           title="Github"
         >
-          {/* <Icon.GitHub className="navigation__container__icons" /> */}
+          <FontAwesomeIcon
+            className="navigation__container__icons"
+            icon={["fab", "github"]}
+          />
         </a>
         <a
           className="link"
@@ -151,10 +153,10 @@ const Hamburger = () => {
           title="Linkedin"
           target="blank"
         >
-          {/* <Icon.Linkedin
-            xlinkTitle="linked in"
+          <FontAwesomeIcon
             className="navigation__container__icons"
-          /> */}
+            icon={["fab", "linkedin"]}
+          />
         </a>
       </div>
     </Menu>

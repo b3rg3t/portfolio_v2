@@ -15,8 +15,8 @@ import DavidSmall from "../../images/davidaSmall.webp";
 import ProudSmall from "../../images/proudaSmall.webp";
 
 //properties
-import React from "../../images/REACT.png";
-import Firebase from "../../images/FIREBASE.png";
+// import React from "../../images/REACT.png";
+// import Firebase from "../../images/FIREBASE.png";
 
 const projects = [
   {
@@ -28,9 +28,9 @@ const projects = [
     thumbnailAlt: "Project XY",
     status: "build",
     text:
-      "This a website for a swedish rockband that needs a new responsive website that works properly on mobile phones and tablets.",
-    react: React,
-    firebase: Firebase
+      "This a website for a swedish rockband that needs a new improved and responsive website that works properly on mobile phones and tablets aswell in desktop. The project is under construction.",
+    // react: React,
+    // firebase: Firebase
   },
   {
     id: 1,
@@ -42,7 +42,7 @@ const projects = [
     github: "https://github.com/b3rg3t/leo_quire",
     status: "done",
     text:
-      "Quire notepad was our first group project where we was introduced to the Agile workform. The project is made in vanilla js and works with local storage."
+      "Quire notepad was our first group project where we was introduced to the Agile workform Scrum. The project is made in vanilla js and works with local storage. You can create/edit/star-mark/search for notes."
   },
   {
     id: 2,
@@ -65,7 +65,7 @@ const projects = [
     originalTitle: "KYH",
     thumbnailAlt: "KYH",
     status: "done",
-    text: "KYH was our first task in school to make a landing page."
+    text: "KYH was our first task in school to make a landing page. It is made with simpel HTML,CSS and JavaScript"
   },
   {
     id: 4,
@@ -77,7 +77,7 @@ const projects = [
     github: "https://github.com/glindberg/grex_candy",
     status: "done",
     text:
-      "Grex was our first group project with React. Grex is supposed to be a training app to find like minded people that want to find training partners."
+      "Grex was our first group project created with React. Grex is supposed to be a training app to find like minded people that want to find training partners. It uses Firebase as back-end and you can log in, create a profile, create activities and live chat with other people. It also have leaflet map where you can see your position in realtime"
   },
   {
     id: 5,
@@ -90,7 +90,7 @@ const projects = [
     status: "done",
     website: "http://davidanders.se/#/",
     text:
-      "This was my very first project in react. It was a portfolio website and it was a fun way to start using react."
+      "This was my very first project in react. It was a portfolio website and it was a fun way to get introduced with react. I was not happy with the design so thats why i created the site you are on now."
   },
   {
     id: 6,
@@ -102,7 +102,7 @@ const projects = [
     status: "done",
     github: "https://github.com/b3rg3t/vendre_proud",
     text:
-      "Proud is a webb application to Slack that collects messages from your slack workspace channel where you want to praise a co-worker. You can send messages from Proud into a specific channel on Slack. Join different groups."
+      "Proud is a webb application to Slack that collects messages from your slack workspace channel where you want to praise a co-worker. You can send messages from Proud into a specific channel on Slack. Join different groups and add co-workers to groups. It is created in VUE and uses VUEX for global state. It has Firebase as back-end."
   }
 ];
 

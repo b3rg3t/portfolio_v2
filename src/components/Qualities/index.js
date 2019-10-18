@@ -40,7 +40,7 @@ const Qualities = () => (
           </div>
           <p>
             I build projects from scratch using React, NextJS, Vue and Vanilla
-            JS
+            JS.
           </p>
         </div>
       </article>
@@ -57,7 +57,7 @@ const Qualities = () => (
             </header>
           </div>
           <p>
-            I'm always striving to learn new ways to code and improve my skills
+            I'm always striving to learn new ways to code and improve my skills.
           </p>
         </div>
       </article>

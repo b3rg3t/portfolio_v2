@@ -36,7 +36,7 @@ class App extends Component {
                   <Qualities />
                 </section>
               </LazyLoad>
-              <LazyLoad height={200} offset={100}>
+              <LazyLoad height={200} offset={200}>
                 <section className="main__first">
                   <Skills />
                 </section>

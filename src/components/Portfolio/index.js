@@ -43,8 +43,8 @@ const ShowDescripion = ({ currentIndex }) => {
       {project
         ? project.map((proj, index) => (
             <div key={index} className="showDescription__container">
-              <h4>{proj.originalAlt}</h4>
-              <p>{proj.text}</p>
+              <h4 className="showDescription__container__header">{proj.originalAlt}</h4>
+              <p className="showDescription__container__text">{proj.text}</p>
 
               <img
                 className=""
@@ -109,18 +109,4 @@ const ShowDescripion = ({ currentIndex }) => {
   );
 };
 
-// const Properties = project => {
-//   console.log(project);
-//   const p = { ...project };
-//   console.log(p);
-//   return (
-//     <div>
-//       {/* {project ? (
-//         project.map((proj, index) => proj.properties)
-//       ) : (
-//         <span>då</span>
-//       )} */}
-//     </div>
-//   );
-// };
 export default Portfolio;

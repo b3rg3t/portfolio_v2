@@ -1,21 +1,38 @@
 import React from "react";
 import "../Footer/footer.scss";
-// import Rating from "../Rating/index"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => (
   <footer className="footer">
-    <p className="credits">
-      Website by{" "}
-      <a className="link" href="https://github.com/b3rg3t">
-        <b>@b3rg3t</b>
+    <div className="footer__container">
+      <p className="credits">Hope you enjoyed my site!</p>
+    </div>
+    <div className="footer__container">
+      <a
+        className="link"
+        target="blank"
+        href="https://github.com/b3rg3t"
+        title="Github"
+      >
+        <FontAwesomeIcon
+          className="footer__container__icons"
+          icon={["fab", "github"]}
+        />
       </a>
-      <br />
-      <br />
-      © copywright twentyninteen
-      <br />
-      <br />
-    </p>
-    {/* <Rating /> */}
+      <a
+        className="link"
+        href="https://www.linkedin.com/in/david-berg-385530175"
+        title="Linkedin"
+        target="blank"
+      >
+        <FontAwesomeIcon
+          className="footer__container__icons"
+          icon={["fab", "linkedin"]}
+        />
+      </a>
+    </div>
+
+    <p className="credits">© copywright twentyninteen</p>
   </footer>
 );
 

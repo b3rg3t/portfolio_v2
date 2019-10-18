@@ -1,28 +1,49 @@
 @import "../../index.scss";
 
 .information {
-  width: 100%;
+  width: 80%;
+  margin: auto;
   margin-top: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: -70px;
+  padding-bottom: 70px;
   .information__content {
-    // width: 80%;
     .information__content__title {
       @include headlinebox($secondary-background);
     }
     .information__content__info {
       margin-top: 40px;
+      width: 80%;
+      margin: auto;
+      .information__content__info__text{
+        margin: 50px 0;
+        .information__content__info__text__bold{
+          color: $special-text-color;
+          font-weight: bold;
+        }
+        .information__content__info__text__link{
+          list-style: none;
+          font-weight: bold;
+          color: $secondary-color;
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
       .information__content__info__boxes {
         display: flex;
         flex-wrap: wrap;
+        margin: auto;
         .information__content__info__boxes__left {
           flex-wrap: wrap;
           flex: 1;
           justify-content: center;
-          margin-bottom: 70px;
+          margin-bottom: 30px;
           min-width: 300px;
+          max-width: 450px;
+          width: 100%;
+          margin-left: 40px;
           .plupp{
             justify-content: row;
           }
@@ -35,11 +56,12 @@
           flex-wrap: wrap;
           flex: 1;
           justify-content: center;
-          margin-bottom: 70px;
+          margin: auto;
           .information__content__info__boxes__box__image{
             width: 100%;
-            margin: 15px;
-            min-width: 200px;
+            max-width: 500px;
+            min-width: 300px;
+            margin: auto;
             border-radius: 10px;
           }
         }
@@ -49,9 +71,10 @@
 }
 
 .year {
-  
+  width: 80%;
   .year__header {
     text-decoration: underline;
+    color: $special-text-color;
   }
   .year__content {
     .year__content__ul {
@@ -65,22 +88,41 @@
   .information__content {
     width: 80% !important;
   }
-  .year__content {
-    width: 100% !important;
+  .information__content__info__boxes__box__image{
+    margin: auto !important;
   }
-  // .information__content__info__boxes__box__image{
-  //   width: 100%;
-  //   margin: 0px !important;
-  //   min-width: 200px;
-  //   border-radius: 10px;
-  // }
+  .information__content__info {
+    width: 100% !important;
+    }
+    .information {
+      width: 100% !important;
+    }
+    .information__content__info__boxes__left {
+      margin-left: 0 !important;
+    }
+
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
   .information__content__info__boxes__box__image{
     width: 100%;
     margin: 0px !important;
-    min-width: 200px;
+    min-width: 200px !important;
     border-radius: 10px;
+  }
+  .year__content {
+    width: 100% !important;
+  }
+  .information__content__info__boxes__left {
+    min-width: 200px !important;
+  }
+  .year{
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .information__content__info__text {
+    width: 100% !important;
   }
 }
 

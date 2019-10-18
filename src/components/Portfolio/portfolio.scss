@@ -76,11 +76,21 @@
     justify-content: center;
     width: 100%;
     margin: auto;
+    
     .showDescription {
       width: 80%;
-      height: 400px;
+      height: 300px;
       position: relative;
+      
       .showDescription__container {
+        .showDescription__container__header{
+          color: orangered;
+          text-decoration: underline;
+          margin: 10px 0 0 0;
+        }
+        .showDescription__container__text{
+          margin: 10px 0;
+        }
         .showDescription__container__links {
           display: flex;
           background-color: $secondary-text-color;
@@ -137,5 +147,13 @@
   .portfolio__imageGallery {
     width: 100vw !important;
     padding: 0 0 0 0 !important;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
   }
 }

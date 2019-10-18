@@ -20,9 +20,12 @@
       border-radius: 5px;
       max-width: 230px;
       flex: 1 1 200px;
+      .qualities__boxes__head{
+        color: $special-text-color;
+      }
       .qualities__boxes__content {
         margin-top: 20px;
-        height: 280px;
+        // height: 280px;
         display: block;
         flex-direction: column;
       }
@@ -34,8 +37,8 @@
     }
   }
 }
-@media screen and (max-width: 960px) {
-  .qualities {
-    margin-bottom: 0;
-  }
-}
+// @media screen and (max-width: 680px) {
+//   .qualities {
+//     margin-bottom: 0;
+//   }
+// }
