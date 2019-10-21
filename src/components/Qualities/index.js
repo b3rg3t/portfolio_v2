@@ -3,7 +3,7 @@ import "./qualities.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Qualities = () => (
   <div className="qualities">
-    <h2 className="qualities__head">Qualities</h2>
+    <h2 className="qualities__head">What I do</h2>
 
     <div className="qualities__box">
       <article className="qualities__boxes">

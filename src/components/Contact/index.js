@@ -49,54 +49,56 @@ const Contact = () => {
   // const isInvalid = name === "" || email === "" || message === "";
   return (
     <div className="contact">
-      <form className="contact__form" onSubmit={handleSubmit}>
-        <h2 className="contact__head">Contact</h2>
-        {/* <label style={{ display: "none" }}>Name:</label> */}
-        <input
-          aria-label="name"
-          className="contact__form__input"
-          name="name"
-          value={name}
-          onChange={e => setName(e.target.value)}
-          placeholder="Name"
-          required
-        />
-        <br />
-        {/* <label style={{ display: "none" }}>Email:</label> */}
-        <input
-          aria-label="email"
-          className="contact__form__input"
-          name="email"
-          value={email}
-          onChange={e => setEmail(e.target.value)}
-          placeholder="Email"
-          required
-        />
-        <br />
-        {/* <label style={{ display: "none" }}>Message:</label> */}
-        <textarea
-          aria-label="message"
-          name="message"
-          rows="4"
-          cols="50"
-          value={message}
-          onChange={e => setMessage(e.target.value)}
-          placeholder="Write a message"
-          required
-        />
-        <input
-          className="contact__form__button"
-          type="submit"
-          value="Submit"
-          // disabled={isInvalid}
-        />
-        <br />
-        {/* {!isInvalid ? (
+      <h2 className="contact__head">Contact</h2>
+      <div className="contact__form__div">
+        <form className="contact__form" onSubmit={handleSubmit}>
+          {/* <label style={{ display: "none" }}>Name:</label> */}
+          <input
+            aria-label="name"
+            className="contact__form__input"
+            name="name"
+            value={name}
+            onChange={e => setName(e.target.value)}
+            placeholder="Name"
+            required
+          />
+          <br />
+          {/* <label style={{ display: "none" }}>Email:</label> */}
+          <input
+            aria-label="email"
+            className="contact__form__input"
+            name="email"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+            placeholder="Email"
+            required
+          />
+          <br />
+          {/* <label style={{ display: "none" }}>Message:</label> */}
+          <textarea
+            aria-label="message"
+            name="message"
+            rows="4"
+            cols="50"
+            value={message}
+            onChange={e => setMessage(e.target.value)}
+            placeholder="Write a message"
+            required
+          />
+          <input
+            className="contact__form__button"
+            type="submit"
+            value="Submit"
+            // disabled={isInvalid}
+          />
+          <br />
+          {/* {!isInvalid ? (
           <span>*You have to fill in all fields to submit.</span>
         ) : (
           <br />
         )} */}
-      </form>
+        </form>
+      </div>
     </div>
   );
 };

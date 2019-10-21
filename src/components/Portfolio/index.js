@@ -46,12 +46,12 @@ const ShowDescripion = ({ currentIndex }) => {
               <h4 className="showDescription__container__header">{proj.originalAlt}</h4>
               <p className="showDescription__container__text">{proj.text}</p>
 
-              <img
+              {/* <img
                 className=""
                 src={proj.react}
                 alt={proj.react}
                 width="50px"
-              />
+              /> */}
               <div className="showDescription__container__links">
                 {proj.status ? (
                   <div className="showDescription__container__link">

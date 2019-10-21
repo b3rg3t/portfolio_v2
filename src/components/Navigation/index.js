@@ -34,12 +34,11 @@ const Navigation = () => {
       <header className="header">
         <div className="navigation__header">
           <h1 className="navigation__header__logo">David Berg</h1>
-        </div>
-        <div className="navigation__center">
-          <span>
+          <span className="navigation__header__logo2">
             <b>Front-End Developer</b>
           </span>
         </div>
+        <div className="navigation__center"></div>
         <div className="navigation__container">
           <a
             className="link"
@@ -68,13 +67,11 @@ const Navigation = () => {
 
       <nav>
         <div className="nav" id={scroll > top ? "fixed-nav" : ""}>
-          <Link to="home">
-            <h1 className="fixed-nav__logo">David Berg</h1>
-          </Link>
           <ul>
             {links.map(link => (
               <li key={link.to} className="navigation__container__link">
                 <Link
+                  className="navigation__container__link  "
                   to={link.id}
                   offset={-70}
                   duration={200}
@@ -91,6 +88,8 @@ const Navigation = () => {
     </div>
   );
 };
+
+
 const Hamburger = () => {
   const [menuOpen, setMenuOpen] = useState();
   const handleStateChange = state => {
@@ -125,9 +124,9 @@ const Hamburger = () => {
         </ul>
       </div>
       <div className="hamburger__links">
-        <a
+        {/* <a
           className="link"
-          href="https://www.facebook.com/davidberg1990"
+          href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com"
           title="Share"
           target="blank"
         >
@@ -135,7 +134,7 @@ const Hamburger = () => {
             className="navigation__container__icons"
             icon={["fas", "share-alt-square"]}
           />
-        </a>
+        </a> */}
         <a
           className="link"
           target="blank"

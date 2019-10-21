@@ -10,7 +10,8 @@ import {
   faCheckSquare,
   faTimes,
   faExternalLinkAlt,
-  faShareAltSquare
+  faShareAltSquare,
+  faMapMarkerAlt
 } from "@fortawesome/free-solid-svg-icons";
 //far
 import { faPaperPlane } from '@fortawesome/free-regular-svg-icons'
@@ -25,5 +26,6 @@ library.add(
   faExternalLinkAlt,
   faLinkedin,
   faShareAltSquare,
-  faPaperPlane
+  faPaperPlane,
+  faMapMarkerAlt
 );

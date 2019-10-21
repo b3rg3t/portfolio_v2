@@ -1,16 +1,36 @@
-
 body {
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Overpass";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
-html{
+html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
 
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(44, 93, 102);
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -18,7 +38,7 @@ code {
 
 //Colors website
 $primary-color: #878ee2;
-$secondary-color:rgb(44, 93, 102);
+$secondary-color: rgb(44, 93, 102);
 $third-color: rgb(183, 207, 241);
 
 $primary-background: rgb(230, 230, 230);
@@ -33,18 +53,18 @@ $special-text-color: rgb(216, 61, 221);
 //Skew properties
 //Vertical
 $skew-negative-v: (skew(0deg, -2deg));
-$skew-negative-box: (skew( 3deg, 0deg));
+$skew-negative-box: (skew(3deg, 0deg));
 
 //Horizontal
 $skew-negative-h: (skew(-3deg, 0deg));
 
 //Fonts
-$font-family-cursive:"Overpass";
+$font-family-cursive: "Overpass";
 
 //Mixins
 @mixin headlinebox($secondary-background) {
   align-items: center;
-  font-family: $font-family-cursive;
+  // font-family: $font-family-cursive;
   color: $secondary-text-color;
   width: 200px;
   margin: auto;
@@ -63,7 +83,6 @@ $font-family-cursive:"Overpass";
   margin: 10px;
   background: $secondary-color;
   color: white;
-  text-shadow: 2px 2px 2px #444444;
   cursor: pointer;
   &:hover {
     background: $third-color;
@@ -97,5 +116,4 @@ $font-family-cursive:"Overpass";
 
 @import url("https://fonts.googleapis.com/css?family=Satisfy&display=swap");
 
-
-@import url('https://fonts.googleapis.com/css?family=Overpass&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Overpass&display=swap");

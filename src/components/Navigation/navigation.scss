@@ -5,16 +5,20 @@
   display: flex;
   width: 100%;
   position: absolute;
-  font-family: "Monospace";
   background-color: $secondary-color;
   .navigation__header {
     flex: 1;
     margin: auto;
-    display: flex;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
     .navigation__header__logo {
       margin: 0;
-      // text-shadow: 2px 2px 2px #444444;
+      font-size: 40px;
+      margin-bottom: -10px;
+    }
+    .navigation__header__logo2 {
+      margin: -30px;
     }
   }
   .navigation__center {
@@ -33,12 +37,15 @@
     .link {
       margin: 0 30px;
       color: white;
-      font-size: 25px;
+      font-size: 30px;
       &:hover {
         color: $primary-color;
       }
     }
   }
+}
+.active{
+  border-bottom: 2px solid $special-text-color;
 }
 .nav {
   background-color: rgba(255, 255, 255, 0.774);
@@ -71,7 +78,7 @@
         align-items: center;
         color: $third-text-color;
         &:hover {
-          color: $secondary-color;
+          color: $special-text-color;
         }
       }
     }
@@ -89,27 +96,6 @@
   z-index: 11;
   margin-top: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.774);
-  -webkit-box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 7px 8px -10px rgba(0, 0, 0, 0.75);
-  h1{
-    display: block;
-    position: absolute;
-    left: 40px;
-    top: 3px;
-    background-color: $secondary-color;
-    color: white;
-    height: 35px;
-    padding: 0 10px;
-    // text-shadow: 2px 2px 2px #444444;
-    border-radius: 10px;
-    font-family: "Monospace";
-    animation: fadein 1.5s;
-    &:hover{
-      color: $primary-color;
-    }
-  }
 }
 
 /* Position and sizing of burger button */
@@ -138,7 +124,7 @@
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: $secondary-color;
+  background: $special-text-color;
 }
 .hamburger__header{
   font-family: $font-family-cursive;
@@ -170,6 +156,7 @@
       align-items: center;
     }
     a {
+      margin:30px 0  ;
       width: auto;
       cursor: pointer;
       &:hover {

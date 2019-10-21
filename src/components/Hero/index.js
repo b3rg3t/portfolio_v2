@@ -14,10 +14,10 @@ const Hero = () => {
         />
       </div>
       <div className="hero__text">
-        <h2 className="hero__text__header">Looking for a <span className="hero__text__bold">Front-end Developer</span>?</h2>
-        <Link  to="contact">
+        <h2 className="hero__text__header">Looking for a <span className="hero__text__bold">Front-end Developer?</span></h2>
+        <Link to="main__fourth">
           <button className="hero__text__button">
-            Hit me up! <FontAwesomeIcon icon={["far", "paper-plane"]}/>
+            Send me a message! <FontAwesomeIcon className="hero__text__button__icon" icon={["far", "paper-plane"]}/>
           </button>
         </Link>
       </div>

@@ -10,6 +10,7 @@ import Skills from "../Skills";
 import Contact from "../Contact";
 import Information from "../Information";
 import Header from "../Hero";
+import Location from "../Location";
 
 //Lazyload
 import LazyLoad from "react-lazyload";
@@ -22,7 +23,6 @@ class App extends Component {
     return (
       <div className="app">
         <Navigation />
-
         <div className="app__main">
           <div className="app__main__content">
             <main className="main">
@@ -54,6 +54,11 @@ class App extends Component {
               <LazyLoad height={200} offset={100}>
                 <section className="main__fourth">
                   <Contact />
+                </section>
+              </LazyLoad>
+              <LazyLoad height={200} offset={100}>
+                <section className="main__fifth">
+                <Location />
                 </section>
               </LazyLoad>
             </main>

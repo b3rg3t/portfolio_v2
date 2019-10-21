@@ -79,9 +79,7 @@
     
     .showDescription {
       width: 80%;
-      height: 300px;
       position: relative;
-      
       .showDescription__container {
         .showDescription__container__header{
           color: $special-text-color;
@@ -95,10 +93,8 @@
           display: flex;
           background-color: $secondary-text-color;
           justify-content: flex-end;
-          position: absolute;
-          bottom: 30px;
-          right: 0;
           width: 100%;
+          margin-bottom: 20px;
           -webkit-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
           -moz-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
           box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 0.54);
@@ -109,6 +105,7 @@
             flex-direction: column;
             flex: 1;
             text-align: center;
+
             .showDescription__container__description{
               margin:0 0 10px 0;
             }
@@ -120,6 +117,9 @@
             }
             .fa-github{
               color: $secondary-color;
+              &:hover{
+                color: $primary-color;
+              }
             }
             .tools{
               color: rgb(255, 174, 0);
@@ -131,6 +131,9 @@
             .fa-external-link-alt{
               color: $secondary-color;
               font-size: 22px;
+              &:hover{
+                color: $primary-color;
+              }
             }
           }
         }
