@@ -34,7 +34,6 @@ const Portfolio = () => {
 };
 
 const ShowDescripion = ({ currentIndex }) => {
-  console.log("showDesciption ran");
   var project = projects.filter(project => {
     return project.id === currentIndex ? project : null;
   });
@@ -45,13 +44,6 @@ const ShowDescripion = ({ currentIndex }) => {
             <div key={index} className="showDescription__container">
               <h4 className="showDescription__container__header">{proj.originalAlt}</h4>
               <p className="showDescription__container__text">{proj.text}</p>
-
-              {/* <img
-                className=""
-                src={proj.react}
-                alt={proj.react}
-                width="50px"
-              /> */}
               <div className="showDescription__container__links">
                 {proj.status ? (
                   <div className="showDescription__container__link">

@@ -15,7 +15,6 @@ const Navigation = () => {
   };
 
   useEffect(() => {
-    console.log("useEffect ran");
     const el = document.querySelector(".nav");
     setTop(el.offsetTop);
     window.addEventListener("scroll", handleScroll);
@@ -124,17 +123,6 @@ const Hamburger = () => {
         </ul>
       </div>
       <div className="hamburger__links">
-        {/* <a
-          className="link"
-          href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com"
-          title="Share"
-          target="blank"
-        >
-          <FontAwesomeIcon
-            className="navigation__container__icons"
-            icon={["fas", "share-alt-square"]}
-          />
-        </a> */}
         <a
           className="link"
           target="blank"
@@ -159,7 +147,6 @@ const Hamburger = () => {
         </a>
       </div>
     </Menu>
-    // </div>
   );
 };
 

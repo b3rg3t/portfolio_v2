@@ -18,10 +18,6 @@
       margin: auto;
       .information__content__info__text{
         margin: 50px 0;
-        .information__content__info__text__bold{
-          // color: $special-text-color;
-          // font-weight: bold;
-        }
         .information__content__info__text__link{
           list-style: none;
           font-weight: bold;
@@ -73,7 +69,6 @@
 .year {
   width: 80%;
   .year__header {
-    // text-decoration: underline;
     color: $special-text-color;
   }
   .year__content {

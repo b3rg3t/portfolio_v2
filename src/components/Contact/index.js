@@ -11,7 +11,6 @@ const Contact = () => {
       email: email,
       message: message
     });
-    console.log(request);
     fetch("https://www.usebasin.com/f/c177f0920b56.json", {
       method: "POST",
       headers: {
@@ -37,22 +36,11 @@ const Contact = () => {
     event.preventDefault();
   };
 
-  //   useEffect(() => {
-  //  console.log("contact form changed")
-  //     console.log(name.length)
-  //     if(name.length >= 1){
-  //       console.log("true")
-  //       return true
-  //     }
-  //   }, [name, email, message])
-
-  // const isInvalid = name === "" || email === "" || message === "";
-  return (
+return (
     <div className="contact">
       <h2 className="contact__head">Contact</h2>
       <div className="contact__form__div">
         <form className="contact__form" onSubmit={handleSubmit}>
-          {/* <label style={{ display: "none" }}>Name:</label> */}
           <input
             aria-label="name"
             className="contact__form__input"
@@ -63,7 +51,6 @@ const Contact = () => {
             required
           />
           <br />
-          {/* <label style={{ display: "none" }}>Email:</label> */}
           <input
             aria-label="email"
             className="contact__form__input"
@@ -74,7 +61,6 @@ const Contact = () => {
             required
           />
           <br />
-          {/* <label style={{ display: "none" }}>Message:</label> */}
           <textarea
             aria-label="message"
             name="message"
@@ -89,14 +75,8 @@ const Contact = () => {
             className="contact__form__button"
             type="submit"
             value="Submit"
-            // disabled={isInvalid}
           />
           <br />
-          {/* {!isInvalid ? (
-          <span>*You have to fill in all fields to submit.</span>
-        ) : (
-          <br />
-        )} */}
         </form>
       </div>
     </div>
