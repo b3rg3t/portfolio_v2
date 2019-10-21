@@ -15,8 +15,8 @@ import Location from "../Location";
 //Lazyload
 import LazyLoad from "react-lazyload";
 
-//FontAwesome 
-import '../fontawesome';
+//FontAwesome
+import "../fontawesome";
 
 class App extends Component {
   render() {
@@ -46,11 +46,11 @@ class App extends Component {
                   <Information />
                 </section>
               </LazyLoad>
-
-              <section className="main__three">
-                <Portfolio />
-              </section>
-
+              <LazyLoad height={200} offset={400}>
+                <section className="main__three">
+                  <Portfolio />
+                </section>
+              </LazyLoad>
               <LazyLoad height={200} offset={100}>
                 <section className="main__fourth">
                   <Contact />
@@ -58,7 +58,7 @@ class App extends Component {
               </LazyLoad>
               <LazyLoad height={200} offset={100}>
                 <section className="main__fifth">
-                <Location />
+                  <Location />
                 </section>
               </LazyLoad>
             </main>
