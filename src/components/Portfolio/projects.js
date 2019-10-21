@@ -53,7 +53,7 @@ const projects = [
     thumbnailAlt: "David Anders Berg",
     github: "https://github.com/b3rg3t/Portfolio",
     status: "done",
-    website: "http://davidanders.se/other/",
+    // website: "http://davidanders.se/other/",
     text:
       "This is my first bigger project I made in school and it is a porfolio website. It is written in HTML, CSS and JavaScript. I did put a lot effort trying to make it responsive. It is a single page site."
   },
@@ -88,7 +88,7 @@ const projects = [
     thumbnailAlt: "David Berg",
     github: "https://github.com/b3rg3t/grex_candy",
     status: "done",
-    website: "http://davidanders.se/#/",
+    // website: "http://davidanders.se/#/",
     text:
       "This was my very first project in react. It was a portfolio website and it was a fun way to get introduced with react. I was not happy with the design so thats why i created the site you are on now."
   },
