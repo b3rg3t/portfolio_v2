@@ -3,6 +3,7 @@
 
 .portfolio {
   width: 100%;
+  min-height: 100vh;
   margin-top: 70px;
   display: flex;
   flex-direction: column;
@@ -17,6 +18,10 @@
   margin: auto;
   color: $primary-text-color;
   .portfolio__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding-top: 50px;
     .portfolio__container__head {
       @include headlinebox($secondary-background);

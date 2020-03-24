@@ -77,8 +77,10 @@ $font-family-cursive: "Overpass";
   // text-shadow: 2px 2px 2px #444444;
 }
 @mixin buttons($secondary-color) {
+  transition: all 0.5s ease;
   border-radius: 30px;
   font-size: 20px;
+  border: none;
   padding: 5px 10px;
   margin: 10px;
   background: $secondary-color;
@@ -94,6 +96,11 @@ $font-family-cursive: "Overpass";
     outline: none;
   }
 }
+
+a {
+  transition: all 0.5s ease;
+}
+
 
 //Keyframes
 @keyframes fadeout {

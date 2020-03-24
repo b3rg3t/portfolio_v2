@@ -20,7 +20,7 @@ const Qualities = () => (
             </header>
           </div>
           <p>
-            I have a great passion for web design where I focus on UX/UI-design. 
+            I have a great passion for web design where I focus on UX/UI-design. I design prototypes in Adobe XD in a user friendly way. 
           </p>
         </div>
       </article>
@@ -40,7 +40,7 @@ const Qualities = () => (
           </div>
           <p>
             I build projects from scratch using React, NextJS, Vue and Vanilla
-            JS.
+            JS. I focus on clean readable code.
           </p>
         </div>
       </article>
@@ -57,7 +57,7 @@ const Qualities = () => (
             </header>
           </div>
           <p>
-            I'm always striving to learn new ways to code and improve my skills.
+            I'm always striving to learn new ways to code and improve my skills. Next up I'm going to look on Svelte.
           </p>
         </div>
       </article>

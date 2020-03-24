@@ -15,7 +15,7 @@ const Information = () => {
               <span className="information__content__info__text__bold">
                 David
               </span>{" "}
-              and I´m a 28 year old dude originally from Linköping, Sweden. I
+              and I´m a 29 year old dude originally from Linköping, Sweden. I
               moved to{" "}
               <span className="information__content__info__text__bold">
                 Stockholm
